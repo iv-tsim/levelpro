@@ -134,6 +134,10 @@ textarea, input {
   background-color: #AA0900;
 }
 
+.btn_wide {
+  padding: 16px 50px;
+}
+
 .title {
   font-weight: 700;
   text-transform: uppercase;
@@ -562,8 +566,149 @@ textarea, input {
   margin-bottom: 20px;
 }
 
+.mask {
+  padding-bottom: 180px;
+  padding-top: 200px;
+}
+
+.mask-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mask-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.mask-title {
+  margin-bottom: 30px;
+}
+
+.mask-title span {
+  color: #C20E1A;
+}
+
+.mask-list {
+  margin-bottom: 15px;
+}
+
+.mask-list__item {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.mask-list__item::after {
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+  top: 7px;
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background-color: #000;
+}
+
+.mask-caption {
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.mask-dec {
+  background-color: #121212;
+  border-radius: 100%;
+  padding: 25px 28px 40px 28px;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  width: 230px;
+  height: 230px;
+}
+
+.mask-dec__img {
+  position: absolute;
+}
+
+.mask-dec__img_1 {
+  top: -280px;
+  right: -170px;
+  z-index: 2;
+}
+
+.mask-dec__img_2 {
+  top: -60px;
+  right: -280px;
+  z-index: 2;
+}
+
+.mask-dec__img_3 {
+  top: -5px;
+  left: -250px;
+  z-index: 4;
+}
+
+.mask-dec__wrapper {
+  position: relative;
+  margin-top: 90px;
+  margin-left: 120px;
+}
+
+.mask-dec__wrapper::after, .mask-dec__wrapper::before {
+  position: absolute;
+  display: block;
+  content: '';
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mask-dec__wrapper::after {
+  width: 140%;
+  height: 140%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.mask-dec__wrapper::before {
+  width: 235%;
+  height: 235%;
+  background-color: #E9E1DC;
+  z-index: 0;
+}
+
+.mask-dec__fire {
+  margin-bottom: 20px;
+}
+
+.mask-dec__title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.mask-dec__title div {
+  color: #C20E1A;
+}
+
 .inst {
   padding-bottom: 150px;
+}
+
+.inst-title {
+  margin-bottom: 80px;
 }
 
 .inst-item__img {
