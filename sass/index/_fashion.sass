@@ -1,0 +1,54 @@
+.fashion
+    &-title
+        margin-bottom: 40px
+    &-text
+        margin-bottom: 100px
+        line-height: 150%
+        max-width: 780px
+    &-item
+        display: flex
+        &__text
+            margin-top: 50px
+            min-width: 33.33%
+            width: 33.33%
+            margin-right: 100px
+        &__title
+            margin-bottom: 15px
+            span
+                color: $shiraz
+        &__location
+            font-size: 18px
+            margin-bottom: 40px
+        &__desc
+            line-height: 160%
+            margin-bottom: 90px
+        &__img
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: cover
+            width: 100%
+            position: relative
+            &-inner
+                width: 100%
+                display: block
+                opacity: 0
+                visibility: hidden
+            &-dec
+                position: absolute
+                right: 0
+                bottom: 0
+                width: 36%
+            &-year
+                -webkit-text-stroke: 1px #fff
+                position: absolute
+                font-weight: 900
+                font-size: 150px
+                left: 30px
+                bottom: 25px
+                line-height: 70%
+                color: transparent
+    &-slider
+        &__bottom
+            margin-top: 50px
+            justify-content: flex-end
+            margin-right: 390px

@@ -154,7 +154,7 @@ textarea, input {
 }
 
 .title_medium {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .title_small {
@@ -564,6 +564,88 @@ textarea, input {
 
 .brands-item__text {
   margin-bottom: 20px;
+}
+
+.fashion-title {
+  margin-bottom: 40px;
+}
+
+.fashion-text {
+  margin-bottom: 100px;
+  line-height: 150%;
+  max-width: 780px;
+}
+
+.fashion-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fashion-item__text {
+  margin-top: 50px;
+  min-width: 33.33%;
+  width: 33.33%;
+  margin-right: 100px;
+}
+
+.fashion-item__title {
+  margin-bottom: 15px;
+}
+
+.fashion-item__title span {
+  color: #C20E1A;
+}
+
+.fashion-item__location {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.fashion-item__desc {
+  line-height: 160%;
+  margin-bottom: 90px;
+}
+
+.fashion-item__img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.fashion-item__img-inner {
+  width: 100%;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fashion-item__img-dec {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 36%;
+}
+
+.fashion-item__img-year {
+  -webkit-text-stroke: 1px #fff;
+  position: absolute;
+  font-weight: 900;
+  font-size: 150px;
+  left: 30px;
+  bottom: 25px;
+  line-height: 70%;
+  color: transparent;
+}
+
+.fashion-slider__bottom {
+  margin-top: 50px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 390px;
 }
 
 .mask {
