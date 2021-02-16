@@ -1,0 +1,33 @@
+.partners
+    padding-bottom: 100px
+    &-item
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+            max-height: 100%
+            max-width: 100%
+    &-title
+        margin-bottom: 80px
+    &-slider
+        padding: 0 70px
+        position: relative
+        &__dots
+            padding-top: 90px
+            text-align: center
+            span
+                margin: 0 10px
+                background-color: $silver
+                opacity: 1
+            span.swiper-pagination-bullet-active
+                background-color: $shiraz
+        &__arrow
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            cursor: pointer
+            z-index: 2
+            &_next
+                right: 0
+            &_prev
+                left: 0
