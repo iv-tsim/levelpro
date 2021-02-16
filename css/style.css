@@ -145,6 +145,10 @@ textarea, input {
   font-size: 24px;
 }
 
+.title_reallySmall {
+  font-size: 20px;
+}
+
 .header-top {
   padding: 10px 0 14px 0;
   background-color: #F4F4F4;
@@ -581,6 +585,77 @@ textarea, input {
 
 .collab-item:hover .collab-item__number {
   color: #121212;
+}
+
+.about {
+  padding-top: 80px;
+  padding-bottom: 130px;
+}
+
+.about-title {
+  margin-bottom: 35px;
+}
+
+.about-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.about-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.about-text__item {
+  margin-bottom: 20px;
+  line-height: 160%;
+}
+
+.about-text__item:last-child {
+  margin-bottom: 0;
+}
+
+.about-list {
+  -ms-flex-preferred-size: 41.66%;
+      flex-basis: 41.66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-item {
+  -ms-flex-preferred-size: 240px;
+      flex-basis: 240px;
+}
+
+.about-item:nth-child(2n - 1) {
+  margin-right: 100px;
+}
+
+.about-item:nth-child(n + 3) {
+  margin-top: 40px;
+}
+
+.about-item__img {
+  margin-bottom: 12px;
+  min-height: 44px;
+}
+
+.about-item__title {
+  margin-bottom: 15px;
+  max-width: 210px;
 }
 
 .alertify-notifier .ajs-message.ajs-warning {
