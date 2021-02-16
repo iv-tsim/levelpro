@@ -1,0 +1,80 @@
+.header
+    &-top
+        padding: 10px 0 14px 0
+        background-color: $wildSand
+        &__container
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__right
+            display: flex
+            align-items: center
+    &-lang
+        display: flex
+        align-items: center
+        &__item
+            color: #000
+            font-size: 14px
+        &__item.active
+            color: $shiraz
+        &__dec
+            margin: 0 10px
+    &-phone
+        font-weight: 700
+        margin-right: 45px
+        color: #000
+        font-feature-settings: 'pnum' on, 'lnum' on
+    &-email
+        color: #000
+    &-sign
+        margin-right: 85px
+    &-bottom
+        padding: 14px 0 20px
+        &__container
+            display: flex
+            justify-content: space-between
+            align-items: center
+    &-nav
+        &__item
+            color: #000
+            font-weight: 500
+            text-transform: uppercase
+            margin-right: 50px
+            transition: .3s color
+            &:last-child
+                margin-right: 0
+            &:hover
+                color: $shiraz
+    &-search
+        position: relative
+        margin: 0 85px
+        min-width: 240px
+        flex-grow: 1
+        &__text
+            border-radius: 60px
+            border: 1px solid $mischka
+            padding: 13px 40px 13px 20px
+            width: 100%
+            font-size: 14px
+            letter-spacing: 0.35px
+            font-weight: 300
+            transition: .3s border-color
+            &:focus, &:hover
+                border-color: #000000
+        &__lens
+            padding: 0
+            width: 18px
+            height: 18px
+            position: absolute
+            right: 19px
+            top: 50%
+            transform: translateY(-50%)
+            background-image: url(../img/general/search.svg)
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: contain
+            border: none
+            background-color: transparent
+            cursor: pointer
+            &:hover ~ .header-search__text
+                border-color: #000000

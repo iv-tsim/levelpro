@@ -1,0 +1,35 @@
+.collab
+    padding-top: 120px
+    padding-bottom: 110px
+    &-list
+        display: flex
+        flex-wrap: wrap
+        width: calc(100% + 40px)
+        margin-left: -20px
+    &-item
+        flex-basis: 350px
+        flex-grow: 1
+        margin: 0 20px 40px 20px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        padding: 40px
+        background-color: $wildSand
+        &__top
+            flex-grow: 1
+        &__img
+            margin-bottom: 55px
+        &__title
+            margin-bottom: 25px
+        &__text
+            margin-bottom: 25px
+            font-size: 20px
+            &_small
+                font-size: 16px
+                color: $mineShaft
+        &__link
+            color: $shiraz
+            font-weight: 700
+            text-transform: uppercase
+            &::after
+                background-color: $shiraz
