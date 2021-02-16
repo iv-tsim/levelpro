@@ -119,6 +119,10 @@ textarea, input
     &_reallySmall
         font-size: 20px
 
+.page
+    &-title
+        margin-bottom: 60px
+
 
 
 // Файлы, относящиеся ко всем страницам
@@ -126,6 +130,8 @@ textarea, input
 @import ./general/_header.sass
 @import ./general/_footer.sass
 @import ./general/_slider.sass
+@import ./general/_breadcrumbs.sass
+@import ./general/_pagination.sass
 
 // Файлы, относящиеся к главной странице
 
@@ -139,6 +145,9 @@ textarea, input
 @import ./index/_about.sass
 @import ./index/_partners.sass
 
+// Файлы, относящиеся к странице новостей
+
+@import ./news/_news.sass
 
 .alertify-notifier .ajs-message.ajs-warning
     background: white

@@ -1,0 +1,28 @@
+.news
+    &-list
+        display: flex
+        flex-wrap: wrap
+        width: calc(100% + 40px)
+        margin-left: -20px
+    &-item
+        margin: 0 20px 60px 20px
+        color: #000
+        flex-basis: 350px
+        flex-grow: 1
+        &__img
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: cover
+            margin-bottom: 25px
+            &-inner
+                width: 100%
+                display: block
+                opacity: 0
+                visibility: hidden
+        &__date
+            text-transform: uppercase
+            color: $silver
+            margin-bottom: 30px
+        &__title
+            margin-bottom: 25px
+        

@@ -1,0 +1,23 @@
+.breadcrumbs
+    padding-top: 35px
+    padding-bottom: 50px
+    &-container
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+    &-item
+        color: #000000
+        position: relative
+        font-size: 10px
+        text-transform: uppercase
+        transition: .3s color
+        font-weight: 500
+        &__dec
+            width: 120px
+            height: 1px
+            background-color: #000
+            margin: 0 25px
+        &:hover
+            color: $shiraz
+    &-item.inactive
+        color: $silverChalice
