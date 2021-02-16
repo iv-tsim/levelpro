@@ -25,18 +25,18 @@
 
         }
 
-        let componentsSlider = new Swiper('.components-slider', {
+        let starSlider = new Swiper('.star-slider', {
 
             speed: 600,
             spaceBetween: 40,
-            slidesPerView: 4,
-            slidesPerGroup: 4,
+            slidesPerView: 3,
+            slidesPerGroup: 3,
             observer: true,
             observeParents: true,
             touchEventsTarget: 'wrapper',
             navigation: {
-                prevEl: '.slider-arrow.slider-arrow__prev',
-                nextEl: '.slider-arrow.slider-arrow__next'
+                prevEl: '.slider-arrow.slider-arrow__prev.star-arrow',
+                nextEl: '.slider-arrow.slider-arrow__next.star-arrow'
             },
             pagination: {
                 el: '.slider-count',

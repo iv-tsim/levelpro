@@ -1,0 +1,33 @@
+.star
+    &-title
+        margin-bottom: 60px
+    &-item
+        &__img
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: cover
+            display: block
+            &-inner
+                display: block
+                width: 100%
+                opacity: 0
+                visibility: hidden
+            &_empty
+                height: 0
+            &:hover
+                ~ .star-item__bottom
+                    color: $shiraz
+                    .star-item__bottom-img
+                        fill: $shiraz
+        &__bottom
+            border: 1px solid $mischka
+            padding: 25px 30px
+            display: flex
+            align-items: center
+            transition: .3s color
+            &-img
+                transition: .3s fill
+                margin-right: 15px
+    &-slider
+        &__bottom
+            margin-top: 70px

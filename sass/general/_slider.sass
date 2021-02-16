@@ -1,0 +1,37 @@
+.slider
+    &-bottom
+        display: flex
+        align-items: center
+    &-count
+        display: flex
+        align-items: center
+        margin-right: 25px
+        width: auto
+        font-weight: 700
+        &__current
+            min-width: 25px
+            color: $shiraz
+            text-align: center
+        &__dec
+            width: 230px
+            height: 1px
+            background-color: #000
+            margin: 0 25px
+        &__total
+            min-width: 25px
+            color: #000
+            text-align: center
+    &-arrows
+        display: flex
+        align-items: center
+    &-arrow
+        cursor: pointer
+        height: 15px
+        svg
+            height: 15px
+            fill: $shiraz
+        &__prev
+            margin-right: 30px
+    &-arrow.swiper-button-disabled
+        svg
+            fill: #000

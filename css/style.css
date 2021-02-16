@@ -434,6 +434,73 @@ textarea, input {
   font-size: 14px;
 }
 
+.slider-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 25px;
+  width: auto;
+  font-weight: 700;
+}
+
+.slider-count__current {
+  min-width: 25px;
+  color: #C20E1A;
+  text-align: center;
+}
+
+.slider-count__dec {
+  width: 230px;
+  height: 1px;
+  background-color: #000;
+  margin: 0 25px;
+}
+
+.slider-count__total {
+  min-width: 25px;
+  color: #000;
+  text-align: center;
+}
+
+.slider-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-arrow {
+  cursor: pointer;
+  height: 15px;
+}
+
+.slider-arrow svg {
+  height: 15px;
+  fill: #C20E1A;
+}
+
+.slider-arrow__prev {
+  margin-right: 30px;
+}
+
+.slider-arrow.swiper-button-disabled svg {
+  fill: #000;
+}
+
 .brands {
   padding-top: 130px;
   padding-bottom: 80px;
@@ -493,6 +560,59 @@ textarea, input {
 
 .brands-item__text {
   margin-bottom: 20px;
+}
+
+.star-title {
+  margin-bottom: 60px;
+}
+
+.star-item__img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+}
+
+.star-item__img-inner {
+  display: block;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.star-item__img_empty {
+  height: 0;
+}
+
+.star-item__img:hover ~ .star-item__bottom {
+  color: #C20E1A;
+}
+
+.star-item__img:hover ~ .star-item__bottom .star-item__bottom-img {
+  fill: #C20E1A;
+}
+
+.star-item__bottom {
+  border: 1px solid #DDDFE4;
+  padding: 25px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .3s color;
+  transition: .3s color;
+}
+
+.star-item__bottom-img {
+  -webkit-transition: .3s fill;
+  transition: .3s fill;
+  margin-right: 15px;
+}
+
+.star-slider__bottom {
+  margin-top: 70px;
 }
 
 .collab {
