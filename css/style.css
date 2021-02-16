@@ -353,6 +353,10 @@ textarea, input {
   padding-bottom: 110px;
 }
 
+.collab-title {
+  margin-bottom: 70px;
+}
+
 .collab-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,12 +386,18 @@ textarea, input {
           align-items: flex-start;
   padding: 40px;
   background-color: #F4F4F4;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .3s color, .3s background-color;
+  transition: .3s color, .3s background-color;
 }
 
 .collab-item__top {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .collab-item__img {
@@ -406,16 +416,40 @@ textarea, input {
 .collab-item__text_small {
   font-size: 16px;
   color: #3A3A3A;
+  margin-bottom: 100px;
 }
 
 .collab-item__link {
   color: #C20E1A;
   font-weight: 700;
   text-transform: uppercase;
+  position: relative;
+  z-index: 1;
 }
 
 .collab-item__link::after {
   background-color: #C20E1A;
+}
+
+.collab-item__number {
+  font-weight: 900;
+  font-size: 300px;
+  color: #fff;
+  position: absolute;
+  left: -85px;
+  top: -40px;
+  line-height: 70%;
+  -webkit-transition: .3s color;
+  transition: .3s color;
+}
+
+.collab-item:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.collab-item:hover .collab-item__number {
+  color: #000;
 }
 
 .alertify-notifier .ajs-message.ajs-warning {

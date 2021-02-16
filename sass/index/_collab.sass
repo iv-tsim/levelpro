@@ -1,6 +1,8 @@
 .collab
     padding-top: 120px
     padding-bottom: 110px
+    &-title
+        margin-bottom: 70px
     &-list
         display: flex
         flex-wrap: wrap
@@ -15,8 +17,13 @@
         align-items: flex-start
         padding: 40px
         background-color: $wildSand
+        position: relative
+        overflow: hidden
+        transition: .3s color, .3s background-color
         &__top
             flex-grow: 1
+            position: relative
+            z-index: 1
         &__img
             margin-bottom: 55px
         &__title
@@ -27,9 +34,26 @@
             &_small
                 font-size: 16px
                 color: $mineShaft
+                margin-bottom: 100px
         &__link
             color: $shiraz
             font-weight: 700
             text-transform: uppercase
+            position: relative
+            z-index: 1
             &::after
                 background-color: $shiraz
+        &__number
+            font-weight: 900
+            font-size: 300px
+            color: #fff
+            position: absolute
+            left: -85px
+            top: -40px
+            line-height: 70%
+            transition: .3s color
+        &:hover
+            background-color: #000
+            color: #fff
+            .collab-item__number
+                color: #000 
