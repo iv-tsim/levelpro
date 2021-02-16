@@ -16,6 +16,15 @@
 
         }
 
+        if (document.querySelector('section.app')) {
+
+            let circle = document.querySelector('.app-dec__circle');
+
+            circle.style.width = circle.offsetHeight + 'px';
+            circle.style.borderWidth = circle.offsetHeight / 5 + 'px';
+
+        }
+
         let componentsSlider = new Swiper('.components-slider', {
 
             speed: 600,

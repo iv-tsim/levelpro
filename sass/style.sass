@@ -94,13 +94,20 @@ textarea, input
     color: #fff
     font-weight: 700
     text-transform: uppercase
+    transition: .3s background-color
     &_small
         padding: 9px 15px
         font-size: 11px
+    &:hover
+        background-color: $brightRed
 
 .title
     font-weight: 700
     text-transform: uppercase
+    &_reallyBig
+        font-weight: 900
+        font-size: 50px
+        line-height: 120%
     &_big
         font-size: 36px
     &_medium
@@ -121,6 +128,7 @@ textarea, input
 
 @import ./index/_brands.sass
 @import ./index/_collab.sass
+@import ./index/_app.sass
 @import ./index/_about.sass
 @import ./index/_partners.sass
 

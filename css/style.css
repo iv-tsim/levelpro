@@ -121,6 +121,8 @@ textarea, input {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
+  -webkit-transition: .3s background-color;
+  transition: .3s background-color;
 }
 
 .btn_small {
@@ -128,9 +130,19 @@ textarea, input {
   font-size: 11px;
 }
 
+.btn:hover {
+  background-color: #AA0900;
+}
+
 .title {
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.title_reallyBig {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 120%;
 }
 
 .title_big {
@@ -585,6 +597,73 @@ textarea, input {
 
 .collab-item:hover .collab-item__number {
   color: #121212;
+}
+
+.app {
+  background-color: #121212;
+  padding: 90px 0 110px 0;
+  color: #fff;
+  position: relative;
+}
+
+.app-main {
+  max-width: 520px;
+}
+
+.app-title {
+  margin-bottom: 20px;
+}
+
+.app-subtitle {
+  color: #C20E1A;
+  margin-bottom: 35px;
+  text-transform: none;
+}
+
+.app-list {
+  margin-bottom: 40px;
+}
+
+.app-list__item {
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.app-list__item::after {
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+  top: 7px;
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background-color: #C20E1A;
+}
+
+.app-dec {
+  position: absolute;
+  height: 104%;
+  bottom: 0;
+  right: 100px;
+}
+
+.app-dec__circle {
+  border-style: solid;
+  border-color: #C20E1A;
+  border-radius: 100%;
+  position: absolute;
+  height: 100%;
+  left: 40px;
+  top: 0;
+  z-index: 0;
+}
+
+.app-dec__img {
+  z-index: 1;
+  position: relative;
+  max-height: 100%;
 }
 
 .about {
