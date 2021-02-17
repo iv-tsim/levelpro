@@ -866,7 +866,7 @@ textarea {
 
 .policy-list__item::before {
   position: absolute;
-  left: 10px;
+  left: 7px;
   top: 7px;
   display: block;
   content: '';
@@ -950,6 +950,19 @@ textarea {
 
 .modal-btn {
   width: 100%;
+}
+
+.modal-policy {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.modal-policy a {
+  color: #000;
+}
+
+.modal-policy a::after {
+  background-color: #000;
 }
 
 .brands {
