@@ -257,7 +257,7 @@ textarea, input {
 
 .header-nav__item {
   color: #000;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   margin-right: 50px;
   -webkit-transition: .3s color;
@@ -540,7 +540,7 @@ textarea, input {
   text-transform: uppercase;
   -webkit-transition: .3s color;
   transition: .3s color;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .breadcrumbs-item__dec {
@@ -716,7 +716,7 @@ textarea, input {
 }
 
 .item-title {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .menu-item {
@@ -1880,6 +1880,56 @@ textarea, input {
 .catalog-text {
   font-size: 18px;
   line-height: 140%;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.card-slider {
+  width: 50%;
+  margin-left: 0;
+}
+
+.card-info {
+  width: 41.66%;
+}
+
+.card-title {
+  margin-bottom: 25px;
+}
+
+.card-specs {
+  font-size: 14px;
+}
+
+.card-specs__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 8px 0;
+  border-top: 1px solid #E5E5E5;
+}
+
+.card-specs__item:last-child {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.card-specs__item-name {
+  font-weight: 600;
+  min-width: 120px;
+  margin-right: 50px;
 }
 
 .alertify-notifier .ajs-message.ajs-warning {

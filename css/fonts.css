@@ -10,12 +10,12 @@
 }
 @font-face {
     font-family: 'Raleway';
-    src: url('../fonts/Raleway-Medium.eot');
-    src: local('Raleway Medium'), local('Raleway-Medium'),
-    url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Raleway-Medium.woff') format('woff'),
-    url('../fonts/Raleway-Medium.ttf') format('truetype');
-    font-weight: 500;
+    src: url('../fonts/Raleway-Semibold.eot');
+    src: local('Raleway Semibold'), local('Raleway-Semibold'),
+    url('../fonts/Raleway-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Semibold.woff') format('woff'),
+    url('../fonts/Raleway-Semibold.ttf') format('truetype');
+    font-weight: 600;
     font-style: normal;
 }
 @font-face {
