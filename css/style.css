@@ -1439,6 +1439,12 @@ textarea, input {
 
 .news-item__title {
   margin-bottom: 25px;
+  -webkit-transition: .3s color;
+  transition: .3s color;
+}
+
+.news-item:hover .news-item__title {
+  color: #C20E1A;
 }
 
 .alertify-notifier .ajs-message.ajs-warning {
