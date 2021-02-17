@@ -1447,6 +1447,44 @@ textarea, input {
   color: #C20E1A;
 }
 
+.newsCard {
+  padding-bottom: 170px;
+}
+
+.newsCard-container {
+  max-width: 920px;
+}
+
+.newsCard-img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 70px;
+}
+
+.newsCard-img__inner {
+  width: 100%;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.newsCard-date {
+  color: #C4C4C4;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.newsCard-title {
+  margin-bottom: 20px;
+}
+
+.newsCard-text {
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 25px;
+}
+
 .alertify-notifier .ajs-message.ajs-warning {
   background: white;
   -webkit-box-shadow: 0 0 3px #333333;
