@@ -1,8 +1,10 @@
 # levelpro
 
-- [blog.html](https://iv-tsim.ru/alfart/blog.html) - Новости
-- [blogCard.html](https://iv-tsim.ru/alfart/blogCard.html) - Карточка новости
-- [card.html](https://iv-tsim.ru/alfart/card.html) - Карточка товара
-- [catalog.html](https://iv-tsim.ru/alfart/catalog.html) - Каталог
-- [index.html](https://iv-tsim.ru/alfart/index.html) - Главная страница
-- [page.html](https://iv-tsim.ru/alfart/page.html) - Типовая страница
+- [card.html](https://iv-tsim.ru/levelpro/card.html) - Карточка товара
+- [catalog.html](https://iv-tsim.ru/levelpro/catalog.html) - Каталог
+- [index.html](https://iv-tsim.ru/levelpro/index.html) - Главная страница
+- [news.html](https://iv-tsim.ru/levelpro/news.html) - Новости
+- [newsCard.html](https://iv-tsim.ru/levelpro/newsCard.html) - Карточка новости
+- [recommendation.html](https://iv-tsim.ru/levelpro/recommendation.html) - Рекомендации
+- [sign.html](https://iv-tsim.ru/levelpro/sign.html) - Вход/регистрация
+- [video.html](https://iv-tsim.ru/levelpro/video.html) - Видео
