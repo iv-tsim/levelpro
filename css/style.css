@@ -719,6 +719,70 @@ textarea, input {
   font-weight: 500;
 }
 
+.menu-item {
+  margin-bottom: 20px;
+}
+
+.menu-item__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu-item__top-text {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu-item__top-img {
+  margin-top: 7px;
+}
+
+.menu-item__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: .5s max-height;
+  transition: .5s max-height;
+}
+
+.menu-item__body-item {
+  color: #000;
+  margin-bottom: 25px;
+  -webkit-transition: .3s color;
+  transition: .3s color;
+}
+
+.menu-item__body-item:first-child {
+  margin-top: 25px;
+}
+
+.menu-item__body-item:last-child {
+  margin-bottom: 20px;
+}
+
+.menu-item__body-item:hover {
+  color: #C20E1A;
+}
+
 .brands {
   padding-top: 130px;
   padding-bottom: 80px;
@@ -1650,7 +1714,7 @@ textarea, input {
 }
 
 .catalog-main {
-  min-width: 270px;
+  min-width: 275px;
   width: 270px;
 }
 

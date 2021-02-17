@@ -124,7 +124,24 @@
 
             const { target } = event;
 
+            if (target.closest('.menu-item__top')) {
 
+                let item = target.closest('.menu-item');
+                let body = item.querySelector('.menu-item__body');
+
+                if (item.classList.contains('active')) {
+
+                    item.classList.remove('active');
+                    body.style.maxHeight = 0;
+
+                } else {
+
+                    item.classList.add('active');
+                    body.style.maxHeight = body.scrollHeight + 'px';
+
+                }
+
+            }
             
         });
 
