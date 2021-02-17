@@ -1,0 +1,25 @@
+.recommendation
+    padding-bottom: 150px
+    max-width: 920px
+    &-title
+        margin-bottom: 25px
+    &-text
+        font-size: 18px
+        margin-bottom: 25px
+    &-list
+        font-size: 18px
+        &__item
+            position: relative
+            padding-left: 12px
+            margin-bottom: 25px
+            &:last-child
+                margin-bottom: 0
+            &::before
+                position: absolute
+                display: block
+                content: ''
+                width: 5px
+                height: 1px
+                background-color: #000
+                top: 10px
+                left: 0
