@@ -368,6 +368,10 @@ textarea {
   margin-left: -50px;
 }
 
+.footer-list_logo {
+  margin-bottom: 80px;
+}
+
 .footer-item {
   margin: 0 50px 90px 50px;
   -ms-flex-preferred-size: 380px;
@@ -405,10 +409,13 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 80px;
 }
 
 .footer-logo__dec {
@@ -813,6 +820,136 @@ textarea {
 
 .menu-item__body-item:hover {
   color: #C20E1A;
+}
+
+.policy {
+  background: #fff;
+  font-size: 16px;
+  color: #000;
+}
+
+.policy-wrapper {
+  display: none;
+  width: 1000px;
+  max-width: 90%;
+}
+
+.policy-wrapper.fancybox-content {
+  padding: 25px;
+  background: #fff;
+}
+
+.policy-wrapper.fancybox-content button.fancybox-close-small {
+  display: none;
+}
+
+.policy-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.policy-text {
+  margin-bottom: 15px;
+}
+
+.policy-list {
+  list-style: none;
+}
+
+.policy-list__item {
+  font-size: 16px;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.policy-list__item::before {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  display: block;
+  content: '';
+  width: 3px;
+  height: 3px;
+  background-color: #C20E1A;
+  border-radius: 100%;
+}
+
+.policy-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.modal {
+  position: relative;
+  background-color: #fff;
+  color: #000;
+  padding: 60px;
+}
+
+.modal-wrapper {
+  display: none;
+  width: 100%;
+  max-width: 500px;
+}
+
+.modal-wrapper.fancybox-content {
+  padding: 0;
+}
+
+.modal-wrapper.fancybox-content button.fancybox-close-small {
+  display: none;
+}
+
+.modal-title {
+  margin-bottom: 30px;
+}
+
+.modal-name {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #3A3A3A;
+}
+
+.modal-name span {
+  color: #C20E1A;
+}
+
+.modal-input {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.modal-submit {
+  width: 100%;
+  border: none;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.modal-close__img {
+  width: 30%;
+}
+
+.modal-btn {
+  width: 100%;
 }
 
 .brands {
@@ -2311,6 +2448,7 @@ textarea {
 
 .sign-forgot {
   margin-bottom: 40px;
+  font-size: 14px;
 }
 
 .sign-forgot a {
