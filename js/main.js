@@ -134,25 +134,29 @@
                 
         }
 
-        let cardSlider = new Swiper('.card-slider', {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            pagination: {
-                el: '.card-slider__dots',
-                type: 'bullets'
-            },
-            mousewheel: true,
-            breakpoints: {
-                950: {
-                    direction: 'vertical',
-                    height: updateCardSliderHeight(),
+        if (document.querySelector('.card-slider')) {
+
+            let cardSlider = new Swiper('.card-slider', {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                pagination: {
+                    el: '.card-slider__dots',
+                    type: 'bullets'
                 },
-                0: {
-                    direction: 'horizontal',
-                    autoHeight: true
+                mousewheel: true,
+                breakpoints: {
+                    950: {
+                        direction: 'vertical',
+                        height: updateCardSliderHeight(),
+                    },
+                    0: {
+                        direction: 'horizontal',
+                        autoHeight: true
+                    }
                 }
-            }
-        });
+            });
+
+        }
 
         const cardSliders = document.querySelectorAll('.cardSlider');
 
