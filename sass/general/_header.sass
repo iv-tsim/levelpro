@@ -2,6 +2,8 @@
     border-bottom: 1px solid $mercury
     &-index
         border-bottom: none
+    &-logo
+        display: flex
     &-top
         padding: 10px 0 14px 0
         background-color: $wildSand
@@ -36,6 +38,16 @@
             display: flex
             justify-content: space-between
             align-items: center
+        &__left
+            display: flex
+            align-items: center
+        &__right
+            display: flex
+            align-items: center
+            margin: 0 85px
+            min-width: 240px
+            flex-grow: 1
+            max-width: 400px
     &-nav
         &__item
             color: #000
@@ -49,8 +61,6 @@
                 color: $shiraz
     &-search
         position: relative
-        margin: 0 85px
-        min-width: 240px
         flex-grow: 1
         &__text
             border-radius: 60px
@@ -80,3 +90,91 @@
             cursor: pointer
             &:hover ~ .header-search__text
                 border-color: #000000
+        &_mobile
+            display: none
+    &-burger
+        width: 20px
+        cursor: pointer
+        align-items: center
+        justify-content: center
+        display: none
+        margin-right: 20px
+        &__item
+            position: relative
+            width: 100%
+            display: block
+            height: 1px
+            background-color: #000
+            &::after, &::before
+                position: absolute
+                left: 0
+                top: 5px
+                display: block
+                content: ''
+                width: 100%
+                height: 1px
+                background-color: #000
+            &::before
+                top: -5px
+    &-cart
+        display: none
+
+@media (max-width: 1350px)
+    .header
+        &-bottom
+            &__right
+                margin: 0 60px
+
+@media (max-width: 1250px)
+    .header
+        &-logo
+            &__img
+                width: 250px
+        &-nav
+            &__item
+                margin-right: 35px
+        &-bottom
+            &__right
+                margin: 0 50px
+
+@media (max-width: 1150px)
+    .header
+        &-top
+            display: none
+        &-bottom
+            padding: 13px 0
+            &__right
+                min-width: auto
+                max-width: auto
+                flex-grow: 0
+                margin-right: 0
+                margin-left: 15px
+        &-search
+            display: none
+            &_mobile
+                display: block
+                width: 40px
+                height: 40px
+                border-radius: 100%
+                background-color: #000
+                display: flex
+                align-items: center
+                justify-content: center
+                svg
+                    fill: #fff
+        &-logo
+            &__img
+                width: 130px
+        &-nav
+            display: none
+        &-burger
+            display: flex
+        &-cart
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 40px
+            height: 40px
+            border-radius: 100%
+            background-color: #000
+            margin-left: 15px
