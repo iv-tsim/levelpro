@@ -113,6 +113,38 @@ textarea, input {
   border-radius: 0;
 }
 
+.input, textarea {
+  border: 1px solid transparent;
+  background-color: #F4F4F4;
+  padding: 15px 20px;
+  width: 100%;
+  -webkit-transition: .3s border-color, .3s background-color;
+  transition: .3s border-color, .3s background-color;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.input:focus, .input:hover, textarea:focus, textarea:hover {
+  background-color: #fff;
+  border-color: #000;
+}
+
+.input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #AFAFAF;
+}
+
+.input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #AFAFAF;
+}
+
+textarea {
+  resize: none;
+}
+
 .btn {
   padding: 16px 40px;
   cursor: pointer;
@@ -2201,6 +2233,92 @@ textarea, input {
 
 .cardSlider-bottom {
   margin-top: 60px;
+}
+
+.sign {
+  padding-bottom: 170px;
+}
+
+.sign-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.sign-column {
+  width: 41.66%;
+}
+
+.sign-column__title {
+  margin-bottom: 50px;
+}
+
+.sign-column__block {
+  margin-bottom: 50px;
+}
+
+.sign-column__block-title {
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.sign-column__block:last-child {
+  margin-bottom: 40px;
+}
+
+.sign-item {
+  margin-bottom: 25px;
+}
+
+.sign-item__title {
+  margin-bottom: 10px;
+  color: #3A3A3A;
+  font-size: 14px;
+}
+
+.sign-item__title span {
+  color: #C20E1A;
+}
+
+.sign-item__textarea {
+  min-height: 200px;
+}
+
+.sign-item__submit {
+  border: none;
+  width: 100%;
+}
+
+.sign-policy {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.sign-policy a {
+  color: #000;
+}
+
+.sign-policy a::after {
+  background-color: #000;
+}
+
+.sign-forgot {
+  margin-bottom: 40px;
+}
+
+.sign-forgot a {
+  color: #000;
+}
+
+.sign-forgot a::after {
+  background-color: #000;
 }
 
 .alertify-notifier .ajs-message.ajs-warning {
