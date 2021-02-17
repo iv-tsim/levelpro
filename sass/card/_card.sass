@@ -1,4 +1,5 @@
 .card
+    padding-bottom: 100px
     &-container
         display: flex
         justify-content: space-between
@@ -6,12 +7,46 @@
     &-slider
         width: 50%
         margin-left: 0
+        position: relative
+        &__item
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: cover
+        &__dots
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: 14px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            z-index: 1
+            span
+                height: auto
+                opacity: 1
+                flex-grow: 1
+                flex-basis: 40px
+                border-radius: 0
+                margin: 10px 0
+                width: 4px
+                background-color: $silver
+                transition: .3s flex-basis
+            span.swiper-pagination-bullet-active
+                background-color: $shiraz
+                flex-basis: 80px
+    &-top
+        flex-grow: 1
     &-info
+        align-self: stretch
         width: 41.66%
+        display: flex
+        flex-direction: column
+        align-items: flex-start
     &-title
         margin-bottom: 25px
     &-specs
         font-size: 14px
+        margin-bottom: 25px
         &__item
             display: flex
             align-items: flex-start
@@ -23,3 +58,106 @@
                 font-weight: 600
                 min-width: 120px
                 margin-right: 50px
+            &-value
+                &_copy
+                    display: flex
+                    align-items: center
+                &__img
+                    margin-left: 25px
+                    cursor: pointer
+    &-name
+        font-weight: 600
+        margin-bottom: 20px
+    &-color
+        display: flex
+        flex-wrap: wrap
+        width: calc(100% + 18px)
+        margin-left: -9px
+        margin-bottom: 30px
+        &__item
+            width: 35px 
+            height: 35px
+            position: relative
+            border: 1px solid $mercury
+            margin: 0 9px
+            &-img
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                opacity: 0
+                visibility: hidden
+                transition: .3s visibility, .3s opacity
+            &::after
+                position: absolute
+                display: block
+                width: 100%
+                height: 100%
+                content: ''
+                border: 2px solid #000
+                opacity: 0
+                visibility: hidden
+                transition: .3s visibility, .3s opacity
+            &:hover
+                &::after
+                    opacity: 1
+                    visibility: visible
+                .card-color__item-img
+                    opacity: 1
+                    visibility: visible 
+        &__item.active  
+            &::after
+                opacity: 1
+                visibility: visible
+            .card-color__item-img
+                opacity: 1
+                visibility: visible
+    &-size
+        display: flex
+        flex-wrap: wrap
+        width: calc(100% + 16px)
+        margin-left: -8px
+        margin-bottom: 30px
+        &__item
+            padding: 7px 7px
+            margin: 0 8px
+            border: 1px solid #000
+            cursor: pointer
+            transition: .3s background-color, .3s color
+            &:hover
+                background-color: #000
+                color: #fff
+        &__item.active
+            background-color: #000
+            color: #fff
+    &-quantity
+        display: flex
+        align-items: center
+        margin-bottom: 30px
+        &__number
+            margin: 0 20px
+            min-width: 85px
+            text-align: center
+            border: 1px solid
+            padding: 7px 7px
+        &__img
+            cursor: pointer
+    &-prices
+        display: flex
+        align-items: flex-end
+    &-price
+        &__old
+            font-size: 14px
+            color: $doveGray
+            text-decoration: line-through
+            margin-right: 10px
+            margin-bottom: 1px
+        &__new
+            font-size: 18px
+            font-weight: 700
+    &-bottom
+        display: flex
+        align-items: center
+        &__text
+            margin-left: 60px
+            font-weight: 600
