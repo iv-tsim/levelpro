@@ -1716,6 +1716,7 @@ textarea, input {
 .catalog-main {
   min-width: 275px;
   width: 270px;
+  padding-top: 25px;
 }
 
 .catalog-list {
