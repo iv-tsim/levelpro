@@ -77,6 +77,18 @@ $(document).ready(function() {
                             '<div class="slider-count__dec"></div>' +
                             '<div class="slider-count__total">' + addZero(total) + '</div>';
                 }
+            },
+            breakpoints: {
+                950: {
+                    spaceBetween: 40,
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                },
+                0: {
+                    spaceBetween: 15,
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                }
             }
 
         });
