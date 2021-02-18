@@ -2521,7 +2521,7 @@ textarea {
 @media (max-width: 500px) {
   .collab {
     padding: 40px 0;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
   .collab-item {
     margin-bottom: 25px;
@@ -2589,7 +2589,7 @@ textarea {
   position: absolute;
   height: 104%;
   bottom: 0;
-  right: 100px;
+  left: 47%;
 }
 
 .app-dec__circle {
@@ -2607,6 +2607,57 @@ textarea {
   z-index: 1;
   position: relative;
   max-height: 100%;
+}
+
+@media (max-width: 1300px) {
+  .app {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .app {
+    padding: 70px 0;
+  }
+  .app-dec {
+    left: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  .app {
+    padding: 50px 0;
+  }
+  .app-dec {
+    display: none;
+  }
+  .app-main {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 40px 0;
+  }
+  .app-title {
+    margin-bottom: 15px;
+  }
+  .app-subtitle {
+    margin-bottom: 25px;
+  }
+  .app-list {
+    margin-bottom: 30px;
+  }
+  .app-list__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  .app-title {
+    font-size: 28px;
+  }
 }
 
 .about {
