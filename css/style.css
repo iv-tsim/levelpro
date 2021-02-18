@@ -34,6 +34,7 @@ a {
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 .content {
@@ -1529,7 +1530,7 @@ textarea {
   z-index: 15;
   position: fixed;
   width: 100%;
-  top: -94px;
+  top: -95px;
   left: 0;
   -webkit-transition: .3s top;
   transition: .3s top;
