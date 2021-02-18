@@ -3414,8 +3414,8 @@ textarea {
 
 .video-item {
   margin: 0 20px 60px 20px;
-  -ms-flex-preferred-size: 350px;
-      flex-basis: 350px;
+  -ms-flex-preferred-size: 330px;
+      flex-basis: 330px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -3456,6 +3456,38 @@ textarea {
 
 .video-item:hover .video-item__img-icon {
   fill: #fff;
+}
+
+@media (max-width: 1100px) {
+  .video-list {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    padding-bottom: 30px;
+  }
+  .video-item {
+    margin: 0 15px 40px 15px;
+  }
+}
+
+@media (max-width: 1079px) {
+  .video-item__img {
+    margin-bottom: 20px;
+  }
+  .video-item__date {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .video-list {
+    padding-bottom: 10px;
+  }
+  .video-item__img {
+    margin-bottom: 15px;
+  }
+  .video-item__date {
+    margin-bottom: 15px;
+  }
 }
 
 .recommendation {
