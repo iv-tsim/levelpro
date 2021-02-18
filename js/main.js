@@ -235,17 +235,27 @@ $(document).ready(function() {
 
             }
 
+            if (!target.closest('.header-burger') && !target.closest('.mobile-menu') && mobileMenu.classList.contains('active')) {
+
+                burger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+
+                const scrollY = document.body.style.top;
+                document.body.style.width = 'auto';
+                document.body.style.position = '';
+                document.body.style.top = '';
+                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
+            }
+
             if (target.closest('.header-burger')) {
 
                 burger.classList.toggle('active');
                 mobileMenu.classList.toggle('active');
 
-            }
-
-            if (!target.closest('.header-burger') && !target.closest('.header-menu.active')) {
-
-                mobileMenu.classList.remove('active');
-                burger.classList.remove('active');
+                document.body.style.position = 'fixed';
+                document.body.style.width = '100%';
+                document.body.style.top = `-${window.scrollY}px`;
 
             }
 
