@@ -20,7 +20,7 @@
             align-items: flex-start
             margin-bottom: 50px
     &-item
-        flex-basis: 300px
+        flex-basis: 265px
         flex-grow: 1
         margin: 0 20px 50px 20px
     &-quantity
@@ -93,3 +93,50 @@
         font-size: 18px
         line-height: 140%
 
+@media (max-width: 1200px)
+    .catalog
+        padding-bottom: 100px
+        &-main
+            display: none
+        &-sort
+            &__wrapper
+                display: none
+        &-quantity
+            padding: 0
+        &-list
+            &__wrapper
+                flex-basis: 100%
+            &__top
+                margin-bottom: 40px
+        &-pagination
+            margin-top: 50px
+            margin-bottom: 100px
+
+@media (max-width: 1000px)
+    .catalog
+        padding-bottom: 70px
+        &-list
+            width: calc(100% + 30px)
+            margin-left: -15px
+            &__top
+                margin-bottom: 30px
+        &-item
+            flex-basis: 240px
+            margin: 0 15px 30px 15px
+        &-pagination
+            margin-top: 40px
+            margin-bottom: 80px
+
+@media (max-width: 800px)
+    .catalog
+        padding-bottom: 50px
+        &-pagination
+            margin-top: 30px
+            margin-bottom: 60px
+
+@media (max-width: 600px)
+    .catalog
+        padding-bottom: 30px
+        &-pagination
+            margin-top: 20px
+            margin-bottom: 40px
