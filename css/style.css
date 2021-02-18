@@ -1169,11 +1169,11 @@ textarea {
   position: fixed;
   height: calc(100% - 67px);
   width: 100%;
-  bottom: 100%;
+  top: -110%;
   left: 0;
   z-index: 5;
-  -webkit-transition: .5s bottom;
-  transition: .5s bottom;
+  -webkit-transition: .5s top;
+  transition: .5s top;
   overflow: hidden;
   background-color: #fff;
 }
@@ -1275,7 +1275,7 @@ textarea {
 }
 
 .mobile-menu.active {
-  bottom: 0;
+  top: 67px;
 }
 
 .search {
