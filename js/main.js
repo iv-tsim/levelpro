@@ -206,6 +206,26 @@ $(document).ready(function() {
 
         const mobileMenuItems = document.querySelectorAll('.mobile-menu__menu .menu-item');
 
+        function destroyMenu() {
+
+            burger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+
+            const scrollY = document.body.style.top;
+            document.body.style.width = 'auto';
+            document.body.style.position = '';
+            document.body.style.top = '';
+            window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
+            mobileMenuItems.forEach(function(item) {
+
+                item.classList.remove('active');
+                item.querySelector('.menu-item__body').style.maxHeight = 0;
+
+            });
+
+        }
+
         document.addEventListener('click', function(event) {
 
             const { target } = event;
@@ -239,21 +259,7 @@ $(document).ready(function() {
 
             if (!target.closest('.header-burger') && !target.closest('.mobile-menu') && mobileMenu.classList.contains('active')) {
 
-                burger.classList.remove('active');
-                mobileMenu.classList.remove('active');
-
-                const scrollY = document.body.style.top;
-                document.body.style.width = 'auto';
-                document.body.style.position = '';
-                document.body.style.top = '';
-                window.scrollTo(0, parseInt(scrollY || '0') * -1);
-
-                mobileMenuItems.forEach(function(item) {
-
-                    item.classList.remove('active');
-                    item.querySelector('.menu-item__body').style.maxHeight = 0;
-
-                });
+                destroyMenu();
 
             }
 
@@ -261,21 +267,7 @@ $(document).ready(function() {
 
                 if (mobileMenu.classList.contains('active')) {
 
-                    burger.classList.remove('active');
-                    mobileMenu.classList.remove('active');
-
-                    const scrollY = document.body.style.top;
-                    document.body.style.width = 'auto';
-                    document.body.style.position = '';
-                    document.body.style.top = '';
-                    window.scrollTo(0, parseInt(scrollY || '0') * -1);
-
-                    mobileMenuItems.forEach(function(item) {
-
-                        item.classList.remove('active');
-                        item.querySelector('.menu-item__body').style.maxHeight = 0;
-
-                    });
+                    destroyMenu();
 
                 } else {
 
