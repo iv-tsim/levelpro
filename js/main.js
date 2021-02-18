@@ -199,6 +199,9 @@ $(document).ready(function() {
 
         }); 
 
+        const burger = document.querySelector('.header-burger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
         document.addEventListener('click', function(event) {
 
             const { target } = event;
@@ -227,6 +230,20 @@ $(document).ready(function() {
                 let text = target.closest('.card-specs__item-value_copy').querySelector('span').textContent;
 
                 navigator.clipboard.writeText(text);
+
+            }
+
+            if (target.closest('.header-burger')) {
+
+                burger.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+
+            }
+
+            if (!target.closest('.header-burger') && !target.closest('.header-menu.active')) {
+
+                mobileMenu.classList.remove('active');
+                burger.classList.remove('active');
 
             }
             

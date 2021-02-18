@@ -13,6 +13,7 @@
                 text-transform: uppercase
             &-img
                 margin-top: 7px
+                transition: .3s transform
         &__body
             display: flex
             flex-direction: column
@@ -30,3 +31,6 @@
                     margin-bottom: 20px
                 &:hover
                     color: $shiraz
+    &-item.active
+        .menu-item__top-img
+            transform: rotate(180deg)
