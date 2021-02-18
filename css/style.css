@@ -1354,6 +1354,46 @@ textarea {
   font-weight: 600;
 }
 
+@media (max-width: 1300px) {
+  .item-img {
+    margin-bottom: 30px;
+  }
+  .item-prices {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .item-img {
+    margin-bottom: 25px;
+  }
+  .item-prices {
+    margin-bottom: 15px;
+  }
+  .item-price {
+    font-size: 22px;
+  }
+  .item-price_old {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .item-img {
+    margin-bottom: 20px;
+  }
+  .item-prices {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .item-img {
+    margin-bottom: 15px;
+  }
+}
+
 .menu-item {
   margin-bottom: 20px;
 }
