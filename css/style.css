@@ -2300,6 +2300,51 @@ textarea {
   margin-top: 70px;
 }
 
+@media (max-width: 1300px) {
+  .star-title {
+    margin-bottom: 50px;
+  }
+  .star-slider__bottom {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .star-title {
+    margin-bottom: 40px;
+  }
+  .star-slider__bottom {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .star-item__bottom {
+    padding: 20px;
+  }
+  .star-slider__bottom {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .star-title {
+    margin-bottom: 30px;
+  }
+  .star-slider__bottom {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .star-title {
+    margin-bottom: 20px;
+  }
+  .star-slider__bottom {
+    margin-top: 20px;
+  }
+}
+
 .collab {
   padding-top: 120px;
   padding-bottom: 110px;
