@@ -1448,8 +1448,8 @@ textarea {
 }
 
 .search-form__cross {
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
   border-radius: 100%;
   background-color: #C4C4C4;
   display: -webkit-box;
@@ -1595,7 +1595,7 @@ textarea {
 
 @media (max-width: 800px) {
   .brands {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 30px;
   }
   .brands-title {
