@@ -834,6 +834,19 @@ textarea {
   }
 }
 
+@media (max-width: 600px) {
+  .slider-count {
+    margin-right: 15px;
+  }
+  .slider-count__dec {
+    width: 70px;
+    margin: 0 15px;
+  }
+  .slider-arrow__prev {
+    margin-right: 20px;
+  }
+}
+
 .breadcrumbs {
   padding-top: 35px;
   padding-bottom: 50px;
