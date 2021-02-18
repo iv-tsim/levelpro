@@ -2871,6 +2871,69 @@ textarea {
   left: 0;
 }
 
+@media (max-width: 1300px) {
+  .partners {
+    padding-bottom: 80px;
+  }
+  .partners-title {
+    margin-bottom: 60px;
+  }
+  .partners-slider {
+    padding: 0 50px;
+  }
+  .partners-slider__dots {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .partners {
+    padding-bottom: 60px;
+  }
+  .partners-title {
+    margin-bottom: 40px;
+  }
+  .partners-slider {
+    padding: 0 30px;
+  }
+  .partners-slider__dots {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .partners {
+    padding-bottom: 50px;
+  }
+  .partners-title {
+    margin-bottom: 30px;
+  }
+  .partners-slider {
+    padding: 0 20px;
+  }
+  .partners-slider__dots {
+    padding-top: 35px;
+  }
+  .partners-slider__dots span {
+    margin: 0 7px;
+  }
+}
+
+@media (max-width: 450px) {
+  .partners {
+    padding-bottom: 40px;
+  }
+  .partners-title {
+    margin-bottom: 20px;
+  }
+  .partners-slider {
+    padding: 0 15px;
+  }
+  .partners-slider__dots {
+    padding-top: 20px;
+  }
+}
+
 .news-list {
   display: -webkit-box;
   display: -ms-flexbox;

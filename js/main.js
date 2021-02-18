@@ -160,10 +160,25 @@ $(document).ready(function() {
                     slidesPerView: 5,
                     slidesPerGroup: 3,
                 },
-                1100: {
+                1000: {
                     spaceBetween: 50,
                     slidesPerView: 4,
                     slidesPerGroup: 2,
+                },
+                650: {
+                    spaceBetween: 30,
+                    slidesPerView: 3,
+                    slidesPerGroup: 2,
+                },
+                360: {
+                    spaceBetween: 15,
+                    slidesPerView: 2,
+                    slidesPerGroup: 1,
+                },
+                0: {
+                    spaceBetween: 15,
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
                 }
 
             }
