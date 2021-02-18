@@ -103,3 +103,75 @@
             &__bottom
                 margin-top: 40px
                 margin-right: 17%
+
+@media (max-width: 1050px)
+    .fashion
+        &-text
+            margin-bottom: 30px
+            max-width: 100%
+        &-item
+            flex-direction: column-reverse
+            &__img
+                width: 70%
+                margin: 0 auto
+            &__text
+                width: 100%
+                margin-right: 0
+            &__desc
+                margin-bottom: 30px
+        &-slider
+            &__bottom
+                justify-content: flex-start
+                margin-right: 0
+
+@media (max-width: 900px)
+    .fashion
+        &-item
+            &__img
+                width: 80%
+
+@media (max-width: 800px)
+    .fashion
+        &-title
+            margin-bottom: 20px
+        &-text
+            margin-bottom: 25px
+        &-item
+            &__img
+                width: 85%
+            &__desc
+                margin-bottom: 25px
+            &__location
+                margin-bottom: 15px
+        &-slider
+            &__bottom
+                margin-top: 30px
+
+@media (max-width: 650px)
+    .fashion
+        &-item
+            &__img
+                width: 100%
+
+@media (max-width: 550px)
+    .fashion
+        &-item
+            &__img
+                &-year
+                    font-size: 80px
+                    left: 20px
+                    bottom: 15px
+
+@media (max-width: 450px)
+    .fashion
+        &-item
+            &__img
+                &-year
+                    font-size: 70px
+
+@media (max-width: 360px)
+    .fashion
+        &-item
+            &__img
+                &-year
+                    font-size: 60px
