@@ -85,6 +85,11 @@ textarea, input
     -webkit-appearance: none
     -moz-appearance: none
     border-radius: 0
+    font-family: 'Raleway', sans-serif
+    &::-webkit-input-placeholder
+        font-family: 'Raleway', sans-serif
+    &:-moz-placeholder
+        font-family: 'Raleway', sans-serif
     
 .input, textarea
     border: 1px solid transparent
@@ -158,6 +163,7 @@ textarea
 @import ./general/_menu.sass
 @import ./general/_modal.sass
 @import ./general/_mobile-menu.sass
+@import ./general/_search.sass
 
 // Файлы, относящиеся к главной странице
 

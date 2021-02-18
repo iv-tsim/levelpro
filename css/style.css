@@ -111,6 +111,15 @@ textarea, input {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+textarea::-webkit-input-placeholder, input::-webkit-input-placeholder {
+  font-family: 'Raleway', sans-serif;
+}
+
+textarea:-moz-placeholder, input:-moz-placeholder {
+  font-family: 'Raleway', sans-serif;
 }
 
 .input, textarea {
@@ -1267,6 +1276,96 @@ textarea {
 
 .mobile-menu.active {
   bottom: 0;
+}
+
+.search {
+  padding: 26px 15px 20px 15px;
+  border-bottom: 1px solid #E5E5E5;
+  background-color: #fff;
+  z-index: 15;
+  position: fixed;
+  width: 100%;
+  top: -94px;
+  left: 0;
+  -webkit-transition: .3s top;
+  transition: .3s top;
+}
+
+.search-cross {
+  width: 20px;
+  height: 11px;
+  cursor: pointer;
+  margin-right: 20px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.search-cross__item {
+  position: absolute;
+  width: 100%;
+  display: block;
+  height: 1px;
+  background-color: #000;
+}
+
+.search-cross__item:first-child {
+  top: 5px;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.search-cross__item:last-child {
+  bottom: 5px;
+  left: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  font-size: 18px;
+}
+
+.search-input::-webkit-input-placeholder {
+  color: #AFAFAF;
+  font-size: 18px;
+}
+
+.search-input:-moz-placeholder {
+  color: #AFAFAF;
+  font-size: 18px;
+}
+
+.search-form__wrapper {
+  position: relative;
+}
+
+.search-form__cross {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #C4C4C4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.search.active {
+  top: 0;
 }
 
 .brands {

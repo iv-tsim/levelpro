@@ -201,6 +201,8 @@ $(document).ready(function() {
 
         const burger = document.querySelector('.header-burger');
         const mobileMenu = document.querySelector('.mobile-menu');
+        const searchInput = document.querySelector('.search-input')
+        const search = document.querySelector('.search');
 
         document.addEventListener('click', function(event) {
 
@@ -244,6 +246,24 @@ $(document).ready(function() {
 
                 mobileMenu.classList.remove('active');
                 burger.classList.remove('active');
+
+            }
+
+            if (target.closest('.search-form__cross')) {
+
+                searchInput.value = '';
+
+            }
+
+            if (target.closest('.search-cross') || !target.closest('.search.active')) {
+
+                search.classList.remove('active');
+
+            }
+
+            if (target.closest('.header-search_mobile')) {
+
+                search.classList.add('active');
 
             }
             
