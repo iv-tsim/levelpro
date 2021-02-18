@@ -86,3 +86,57 @@
             div
                 color: $shiraz
             
+@media (max-width: 1350px)
+    .mask
+        &-dec
+            &__img
+                &_2
+                    width: 400px
+                    top: -20px
+                    right: -250px
+
+@media (max-width: 1300px)
+    .mask
+        padding-top: 170px
+        padding-bottom: 120px
+        &-dec
+            width: 200px
+            height: 200px
+            &__fire
+                margin-bottom: 10px
+        &-caption
+            margin-bottom: 60px
+
+@media (max-width: 1200px)
+    .mask
+        padding: 70px 0
+        &-container
+            flex-direction: column
+        &-text
+            flex-basis: auto
+        &-dec
+            &__img
+                display: none
+            &__wrapper
+                margin-top: 0
+                margin-left: 0
+                margin-bottom: 30px
+                &::before, &::after
+                    display: none
+        &-caption
+            margin-bottom: 40px
+
+@media (max-width: 800px)
+    .mask
+        padding: 50px 0
+        &-dec
+            &__wrapper
+                margin-bottom: 20px
+        &-title
+            margin-bottom: 20px
+        &-caption
+            margin-bottom: 30px
+
+@media (max-width: 600px)
+    .mask
+        padding: 40px 0
