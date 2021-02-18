@@ -153,7 +153,20 @@ $(document).ready(function() {
                 type: 'bullets',
                 clickable: true
             },
+            breakpoints: {
 
+                1300: {
+                    spaceBetween: 60,
+                    slidesPerView: 5,
+                    slidesPerGroup: 3,
+                },
+                1100: {
+                    spaceBetween: 50,
+                    slidesPerView: 4,
+                    slidesPerGroup: 2,
+                }
+
+            }
         });
 
         function updateCardSliderHeight() {
