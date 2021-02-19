@@ -261,6 +261,8 @@ $(document).ready(function() {
         const mobileMenu = document.querySelector('.mobile-menu');
         const searchInput = document.querySelector('.search-input')
         const search = document.querySelector('.search');
+        const cardSizes = document.querySelectorAll('.card-size__item');
+        const cardNumber = document.querySelector('.card-quantity__number');
 
         const mobileMenuItems = document.querySelectorAll('.mobile-menu__menu .menu-item');
 
@@ -312,6 +314,41 @@ $(document).ready(function() {
                 let text = target.closest('.card-specs__item-value_copy').querySelector('span').textContent;
 
                 navigator.clipboard.writeText(text);
+
+            }
+
+            if (target.matches('.card-size__item')) {
+
+                cardSizes.forEach(function(item) {
+
+                    item.classList.remove('active');
+
+                });
+
+                target.classList.add('active');
+
+            }
+
+            if (target.matches('.card-quantity__img')) {
+
+                let cardNumberData = +cardNumber.dataset.number;
+
+                if (target.classList.contains('card-quantity__minus')) {
+
+                    if (cardNumberData > 1) {
+
+                        cardNumberData -= 1;
+
+                    }
+
+                } else {
+
+                    cardNumberData += 1;
+
+                }
+
+                cardNumber.dataset.number = cardNumberData
+                cardNumber.textContent = cardNumberData;
 
             }
 

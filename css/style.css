@@ -1023,6 +1023,7 @@ textarea {
   -webkit-transition: .3s color;
   transition: .3s color;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .breadcrumbs-item__dec {
@@ -1030,6 +1031,7 @@ textarea {
   height: 1px;
   background-color: #000;
   margin: 0 25px;
+  margin-bottom: 5px;
 }
 
 .breadcrumbs-item:hover {
@@ -1048,6 +1050,7 @@ textarea {
   .breadcrumbs-item__dec {
     width: 100px;
     margin: 0 20px;
+    margin-bottom: 5px;
   }
 }
 
@@ -1059,6 +1062,7 @@ textarea {
   .breadcrumbs-item__dec {
     width: 80px;
     margin: 0 20px;
+    margin-bottom: 5px;
   }
 }
 
@@ -1070,6 +1074,7 @@ textarea {
   .breadcrumbs-item__dec {
     width: 60px;
     margin: 0 15px;
+    margin-bottom: 5px;
   }
 }
 
@@ -1080,6 +1085,7 @@ textarea {
   .breadcrumbs-item__dec {
     width: 40px;
     margin: 0 10px;
+    margin-bottom: 5px;
   }
 }
 
@@ -4046,7 +4052,7 @@ textarea {
       flex-wrap: wrap;
   width: calc(100% + 18px);
   margin-left: -9px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .card-color__item {
@@ -4054,7 +4060,7 @@ textarea {
   height: 35px;
   position: relative;
   border: 1px solid #E5E5E5;
-  margin: 0 9px;
+  margin: 0 9px 18px 9px;
 }
 
 .card-color__item-img {
@@ -4161,6 +4167,7 @@ textarea {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-bottom: 30px;
 }
 
 .card-price__old {
@@ -4188,6 +4195,39 @@ textarea {
 .card-bottom__text {
   margin-left: 60px;
   font-weight: 600;
+}
+
+@media (max-width: 1300px) {
+  .card-name {
+    margin-bottom: 10px;
+  }
+  .card-title, .card-specs, .card-size, .card-quantity, .card-prices {
+    margin-bottom: 20px;
+  }
+  .card-color {
+    margin-bottom: 6px;
+  }
+  .card-color__item {
+    margin: 0 7px 14px 7px;
+  }
+  .card-bottom__text {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-specs__item {
+    padding: 7px 0;
+  }
+}
+
+@media (max-width: 1150px) {
+  .card-slider {
+    width: 43%;
+  }
+  .card-info {
+    width: 50%;
+  }
 }
 
 .desc {
