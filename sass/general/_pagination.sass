@@ -13,6 +13,10 @@
         transition: .3s color
         &:hover
             color: $shiraz
+    &-text.incative
+        color: $silver
+        &:hover
+            color: $silver
     &-item
         color: #000
         transition: .3s color, .3s background-color
@@ -31,6 +35,11 @@
     &-item.notnumber
         &:hover
             color: #000
+            background-color: #fff
+    &-item.inactive
+        color: $silver
+        &:hover
+            color: $silver
             background-color: #fff
     &-item.active
         color: #fff
@@ -55,6 +64,13 @@
             border-right: 1px solid $silver
         &_prev
             border-left: 1px solid $silver
+    &-arrow.inactive
+        svg
+            fill: $silver
+        &:hover
+            background-color: #fff
+            svg
+                fill: $silver
             
 
 @media (max-width: 1300px)

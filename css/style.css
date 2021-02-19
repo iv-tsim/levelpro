@@ -1115,6 +1115,14 @@ textarea {
   color: #C20E1A;
 }
 
+.pagination-text.incative {
+  color: #C4C4C4;
+}
+
+.pagination-text.incative:hover {
+  color: #C4C4C4;
+}
+
 .pagination-item {
   color: #000;
   -webkit-transition: .3s color, .3s background-color;
@@ -1145,6 +1153,15 @@ textarea {
 
 .pagination-item.notnumber:hover {
   color: #000;
+  background-color: #fff;
+}
+
+.pagination-item.inactive {
+  color: #C4C4C4;
+}
+
+.pagination-item.inactive:hover {
+  color: #C4C4C4;
   background-color: #fff;
 }
 
@@ -1191,6 +1208,18 @@ textarea {
 
 .pagination-arrow_prev {
   border-left: 1px solid #C4C4C4;
+}
+
+.pagination-arrow.inactive svg {
+  fill: #C4C4C4;
+}
+
+.pagination-arrow.inactive:hover {
+  background-color: #fff;
+}
+
+.pagination-arrow.inactive:hover svg {
+  fill: #C4C4C4;
 }
 
 @media (max-width: 1300px) {
