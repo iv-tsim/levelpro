@@ -3401,6 +3401,57 @@ textarea {
   margin-bottom: 25px;
 }
 
+@media (max-width: 1300px) {
+  .newsCard {
+    padding-bottom: 140px;
+  }
+  .newsCard-img {
+    margin-bottom: 50px;
+  }
+  .newsCard-date {
+    margin-bottom: 20px;
+  }
+  .newsCard-text {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .newsCard {
+    padding-bottom: 100px;
+  }
+  .newsCard-img {
+    margin-bottom: 40px;
+  }
+  .newsCard-date {
+    margin-bottom: 20px;
+  }
+  .newsCard-text {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .newsCard {
+    padding-bottom: 70px;
+  }
+  .newsCard-img {
+    margin-bottom: 30px;
+  }
+  .newsCard-date {
+    margin-bottom: 15px;
+  }
+  .newsCard-text {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .newsCard {
+    padding-bottom: 40px;
+  }
+}
+
 .video-list {
   display: -webkit-box;
   display: -ms-flexbox;
