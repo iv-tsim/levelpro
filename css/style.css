@@ -1643,6 +1643,44 @@ textarea {
   background-color: #000;
 }
 
+@media (max-width: 800px) {
+  .modal {
+    padding: 40px 30px;
+  }
+  .modal-title {
+    margin-bottom: 20px;
+  }
+  .modal-input {
+    margin-bottom: 20px;
+  }
+  .modal-policy {
+    margin-bottom: 20px;
+  }
+  .modal-close {
+    width: 40px;
+    height: 40px;
+  }
+  .policy-wrapper.fancybox-content {
+    padding: 15px;
+    padding-top: 40px;
+  }
+  .policy-title {
+    margin-bottom: 20px;
+  }
+  .policy-list__item {
+    padding-left: 15px;
+  }
+  .policy-list__item::before {
+    left: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .modal {
+    padding: 25px 20px;
+  }
+}
+
 .mobile-menu {
   display: -webkit-box;
   display: -ms-flexbox;

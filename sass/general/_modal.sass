@@ -86,3 +86,31 @@
             color: #000
             &::after
                 background-color: #000
+
+@media (max-width: 800px)
+    .modal
+        padding: 40px 30px
+        &-title
+            margin-bottom: 20px
+        &-input
+            margin-bottom: 20px
+        &-policy
+            margin-bottom: 20px
+        &-close
+            width: 40px
+            height: 40px
+    .policy
+        &-wrapper.fancybox-content
+            padding: 15px
+            padding-top: 40px
+        &-title
+            margin-bottom: 20px
+        &-list
+            &__item
+                padding-left: 15px
+                &::before
+                    left: 5px
+
+@media (max-width: 500px)
+    .modal
+        padding: 25px 20px
