@@ -5,9 +5,10 @@
         justify-content: space-between
         align-items: flex-start
     &-slider
-        width: 50%
         margin-left: 0
-        position: relative
+        &__wrapper
+            width: 50%
+            position: relative
         &__item
             background-repeat: no-repeat
             background-position: center center
@@ -117,10 +118,10 @@
         flex-wrap: wrap
         width: calc(100% + 16px)
         margin-left: -8px
-        margin-bottom: 30px
+        margin-bottom: 14px
         &__item
             padding: 7px 7px
-            margin: 0 8px
+            margin: 0 8px 16px 8px
             border: 1px solid #000
             cursor: pointer
             transition: .3s background-color, .3s color
@@ -165,10 +166,13 @@
 
 @media (max-width: 1300px)
     .card
+        padding-bottom: 80px
         &-name
             margin-bottom: 10px
-        &-title, &-specs, &-size, &-quantity, &-prices
+        &-title, &-specs, &-quantity, &-prices
             margin-bottom: 20px
+        &-size
+            margin-bottom: 4px
         &-color
             margin-bottom: 6px
             &__item
@@ -185,7 +189,87 @@
 
 @media (max-width: 1150px)
     .card
+        padding-bottom: 70px
         &-slider
-            width: 43%
+           &__wrapper
+                width: 43%
         &-info
             width: 50%
+
+@media (max-width: 1000px)
+    .card
+        padding-bottom: 60px
+        &-container
+            flex-direction: column
+        &-slider
+            &__wrapper
+                margin: 0 auto
+                margin-bottom: 40px
+                width: 60%
+            &__dots
+                margin-top: 20px 
+                position: relative
+                top: auto
+                left: auto
+                transform: translateY(0)
+                flex-direction: row
+                align-items: center
+                bottom: auto
+                span
+                    height: 4px
+                    margin: 0 10px
+                    width: auto
+                    &:first-child
+                        margin-left: 0
+                    &:last-child
+                        margin-right: 0
+        &-info
+            width: 100%
+
+@media (max-width: 800px)
+    .card
+        padding-bottom: 50px
+        &-slider
+            &__wrapper
+                margin-bottom: 30px
+                width: 70%
+
+@media (max-width: 500px)
+    .card
+        padding-bottom: 40px
+        &-slider
+            &__wrapper
+                margin-bottom: 20px
+                width: 100%
+            &__dots
+                margin-top: 15px
+        &-specs
+            &__item
+                &-name
+                    margin-right: 30px
+        &-bottom
+            &__text
+                margin-left: 25px
+                font-size: 14px
+
+@media (max-width: 410px)
+    .card
+        &-specs
+            &__item
+                &-name
+                    margin-right: 15px
+        &-bottom
+            flex-direction: column-reverse
+            align-items: flex-start
+            &__text
+                margin-left: 0
+                margin-bottom: 20px
+                font-size: 14px
+
+@media (max-width: 350px)
+    .card
+        &-specs
+            &__item
+                font-size: 13px
+                &-name
+                    min-width: 110px

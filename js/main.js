@@ -209,13 +209,14 @@ $(document).ready(function() {
                 },
                 mousewheel: true,
                 breakpoints: {
-                    950: {
+                    1000: {
                         direction: 'vertical',
                         height: updateCardSliderHeight(),
                     },
                     0: {
+                        spaceBetween: 15,
                         direction: 'horizontal',
-                        autoHeight: true
+                        mousewheel: false,
                     }
                 }
             });
@@ -252,6 +253,30 @@ $(document).ready(function() {
                                 '<div class="slider-count__dec"></div>' +
                                 '<div class="slider-count__total">' + addZero(total) + '</div>';
                     }
+                },
+                breakpoints: {
+
+                    1200: {
+                        spaceBetween: 40,
+                        slidesPerView: 4,
+                        slidesPerGroup: 4,
+                    },
+                    750 : {
+                        spaceBetween: 30,
+                        slidesPerView: 3,
+                        slidesPerGroup: 3,
+                    },
+                    400 : {
+                        spaceBetween: 20,
+                        slidesPerView: 2,
+                        slidesPerGroup: 2,
+                    },
+                    0 : {
+                        spaceBetween: 15,
+                        slidesPerView: 1,
+                        slidesPerGroup: 1,
+                    }
+
                 }
             });
 
