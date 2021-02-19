@@ -4277,6 +4277,97 @@ textarea {
   background-color: #000;
 }
 
+@media (max-width: 1300px) {
+  .sign {
+    padding-bottom: 140px;
+  }
+  .sign-column__title {
+    margin-bottom: 40px;
+  }
+  .sign-column__block {
+    margin-bottom: 30px;
+  }
+  .sign-column__block-title {
+    margin-bottom: 20px;
+  }
+  .sign-item {
+    margin-bottom: 20px;
+  }
+  .sign-policy {
+    margin-bottom: 20px;
+  }
+  .sign-forgot {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sign {
+    padding-bottom: 110px;
+  }
+  .sign-column {
+    width: 45%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sign {
+    padding-bottom: 80px;
+  }
+  .sign-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .sign-column {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .sign-column:first-child {
+    margin-bottom: 0;
+  }
+  .sign-column__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .sign {
+    padding-bottom: 60px;
+  }
+  .sign-column__title {
+    margin-bottom: 20px;
+  }
+  .sign-column__block {
+    margin-bottom: 20px;
+  }
+  .sign-column__block-title {
+    margin-bottom: 15px;
+  }
+  .sign-item {
+    margin-bottom: 15px;
+  }
+  .sign-item__textarea {
+    min-height: 150px;
+  }
+  .sign-policy {
+    margin-bottom: 15px;
+  }
+  .sign-forgot {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sign {
+    padding-bottom: 40px;
+  }
+}
+
 .alertify-notifier .ajs-message.ajs-warning {
   background: white;
   -webkit-box-shadow: 0 0 3px #333333;
