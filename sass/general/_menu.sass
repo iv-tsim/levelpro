@@ -11,6 +11,7 @@
                 font-size: 18px
                 font-weight: 700
                 text-transform: uppercase
+                color: #000
             &-img
                 margin-top: 7px
                 transition: .3s transform
@@ -31,6 +32,10 @@
                     margin-bottom: 20px
                 &:hover
                     color: $shiraz
+            &-item.active
+                color: $shiraz
     &-item.active
         .menu-item__top-img
             transform: rotate(180deg)
+        .menu-item__body
+            max-height: 100%

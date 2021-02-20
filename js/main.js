@@ -284,10 +284,11 @@ $(document).ready(function() {
 
         const burger = document.querySelector('.header-burger');
         const mobileMenu = document.querySelector('.mobile-menu');
-        const searchInput = document.querySelector('.search-input')
+        const searchInput = document.querySelector('.search-input');
         const search = document.querySelector('.search');
         const cardSizes = document.querySelectorAll('.card-size__item');
         const cardNumber = document.querySelector('.card-quantity__number');
+        const cart = document.querySelector('.cart');
 
         const mobileMenuItems = document.querySelectorAll('.mobile-menu__menu .menu-item');
 
@@ -302,37 +303,11 @@ $(document).ready(function() {
             document.body.style.top = '';
             window.scrollTo(0, parseInt(scrollY || '0') * -1);
 
-            mobileMenuItems.forEach(function(item) {
-
-                item.classList.remove('active');
-                item.querySelector('.menu-item__body').style.maxHeight = 0;
-
-            });
-
         }
 
         document.addEventListener('click', function(event) {
 
             const { target } = event;
-
-            if (target.closest('.menu-item__top')) {
-
-                let item = target.closest('.menu-item');
-                let body = item.querySelector('.menu-item__body');
-
-                if (item.classList.contains('active')) {
-
-                    item.classList.remove('active');
-                    body.style.maxHeight = 0;
-
-                } else {
-
-                    item.classList.add('active');
-                    body.style.maxHeight = body.scrollHeight + 'px';
-
-                }
-
-            }
 
             if (target.matches('.card-specs__item-value__img')) {
 
@@ -419,8 +394,22 @@ $(document).ready(function() {
                 search.classList.add('active');
 
             }
+
+            if (cart.classList.contains('active') && (target.closest('.cart-cross') || !target.closest('.cart'))) {
+
+                cart.classList.remove('active');
+
+            }
+
+            if (target.closest('.cart-circle') || target.closest('.header-cart')) {
+
+                cart.classList.add('active');
+
+            }
             
         });
+
+        OverlayScrollbars(document.querySelector('.cart-main'), {});
 
     });
 
