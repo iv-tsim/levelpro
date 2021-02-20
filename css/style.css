@@ -4549,12 +4549,18 @@ textarea {
       -ms-flex-positive: 1;
           flex-grow: 1;
   overflow: auto;
-  margin-bottom: 20px;
+  padding: 15px 20px;
 }
 
 .catalog-menu_mobile__body .catalog-dropdown__top {
   font-size: 14px;
   font-weight: 400;
+  padding: 15px 0;
+}
+
+.catalog-menu_mobile__body .catalog-dropdown__body-item {
+  padding-top: 0;
+  padding-bottom: 15px;
 }
 
 .catalog-menu_mobile__top {
@@ -4582,7 +4588,6 @@ textarea {
 }
 
 .catalog-menu_mobile__main {
-  padding: 15px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4597,8 +4602,6 @@ textarea {
 }
 
 .catalog-menu_mobile__item {
-  padding-bottom: 15px;
-  margin-bottom: 15px;
   border-bottom: 1px solid #E5E5E5;
 }
 
@@ -4608,10 +4611,7 @@ textarea {
   display: flex;
   width: calc(100% + 16px);
   margin-left: -8px;
-}
-
-.catalog-menu_mobile__submit {
-  border: none;
+  padding: 15px 20px;
 }
 
 .catalog-menu_mobile__submit, .catalog-menu_mobile__reset {
@@ -4624,6 +4624,11 @@ textarea {
   padding: 10px 20px;
   font-size: 12px;
   text-transform: none;
+}
+
+.catalog-menu_mobile__submit {
+  border: none;
+  padding: 11px 20px;
 }
 
 .catalog-menu_mobile.active {
@@ -4762,6 +4767,19 @@ textarea {
 @media (max-width: 370px) {
   .catalog-menu__btn {
     padding: 14px 20px;
+  }
+  .catalog-menu_mobile__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .catalog-menu_mobile__submit, .catalog-menu_mobile__reset {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .catalog-menu_mobile__submit {
+    margin-bottom: 10px;
   }
 }
 

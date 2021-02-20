@@ -189,10 +189,14 @@
             &__body
                 flex-grow: 1
                 overflow: auto
-                margin-bottom: 20px
+                padding: 15px 20px
                 .catalog-dropdown__top
                     font-size: 14px
                     font-weight: 400
+                    padding: 15px 0
+                .catalog-dropdown__body-item
+                    padding-top: 0
+                    padding-bottom: 15px
             &__top
                 position: relative
                 border-bottom: 1px solid $mercury
@@ -207,21 +211,17 @@
                     left: 20px
                     transform: translateY(-50%)
             &__main
-                padding: 15px 20px
                 display: flex
                 flex-direction: column
                 flex-grow: 1
                 overflow: hidden
             &__item
-                padding-bottom: 15px
-                margin-bottom: 15px
                 border-bottom: 1px solid $mercury
             &__bottom
                 display: flex
                 width: calc(100% + 16px)
                 margin-left: -8px
-            &__submit
-                border: none
+                padding: 15px 20px
             &__submit, &__reset
                 margin: 0 8px
                 flex-grow: 1
@@ -229,6 +229,9 @@
                 padding: 10px 20px
                 font-size: 12px
                 text-transform: none
+            &__submit
+                border: none
+                padding: 11px 20px
     &-menu_mobile.active
         right: 0
 @media (max-width: 1200px)
@@ -323,6 +326,14 @@
         &-menu
             &__btn
                 padding: 14px 20px
+        &-menu
+            &_mobile
+                &__bottom
+                    flex-direction: column-reverse
+                &__submit, &__reset
+                    flex-basis: auto
+                &__submit
+                    margin-bottom: 10px
 
 @media (max-width: 359px)
     .catalog
