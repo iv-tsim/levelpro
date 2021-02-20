@@ -122,7 +122,7 @@ textarea
     color: #fff
     font-weight: 700
     text-transform: uppercase
-    transition: .3s background-color
+    transition: .3s background-color, .3s color
     &_small
         padding: 9px 15px
         font-size: 11px
@@ -130,6 +130,21 @@ textarea
         background-color: $brightRed
     &_wide
         padding: 16px 50px
+    &_gray
+        border: 1px solid $silverChalice
+        background-color: #fff
+        color: $gray
+        &:hover
+            background-color: $mineShaft
+            color: #fff
+    &_black
+        border: 1px solid #000
+        color: #000
+        background-color: #fff
+        padding: 12px 10px
+        &:hover
+            color: #fff
+            background-color: #000
 
 .title
     font-weight: 700

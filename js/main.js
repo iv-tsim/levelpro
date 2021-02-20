@@ -289,6 +289,18 @@ $(document).ready(function() {
         const cardSizes = document.querySelectorAll('.card-size__item');
         const cardNumber = document.querySelector('.card-quantity__number');
         const cart = document.querySelector('.cart');
+        const catalogItems = document.querySelectorAll('.catalog-item');
+        const catalogMenu = document.querySelector('.catalog-menu_mobile');
+
+        console.log(catalogMenu);
+
+        let catalogItemFlexBasis;
+
+        if (catalogItems) {
+
+            catalogItemFlexBasis = getComputedStyle(document.querySelector('.catalog-item')).flexBasis;
+
+        }
 
         const mobileMenuItems = document.querySelectorAll('.mobile-menu__menu .menu-item');
 
@@ -308,6 +320,59 @@ $(document).ready(function() {
         document.addEventListener('click', function(event) {
 
             const { target } = event;
+
+            if (target.closest('.catalog-dropdown__top')) {
+
+                let item = target.closest('.catalog-dropdown');
+                let body = item.querySelector('.catalog-dropdown__body');
+
+                if (item.classList.contains('active')) {
+
+                    item.classList.remove('active');
+                    body.style.maxHeight = 0;
+
+                } else {
+
+                    item.classList.add('active');
+                    body.style.maxHeight = body.scrollHeight + 'px';
+
+                }
+
+            }
+
+            if (target.closest('.catalog-amount')) {
+
+                if (target.closest('.catalog-amount__full')) {
+
+                    catalogItems.forEach(function(item) {
+
+                        item.style.flexBasis = '100%';
+
+                    });
+
+                } else {
+
+                    catalogItems.forEach(function(item) {
+
+                        item.style.flexBasis = catalogItemFlexBasis;
+
+                    });
+
+                }
+
+            }
+
+            if (target.closest('.catalog-menu__btn')) {
+
+                catalogMenu.classList.add('active');
+
+            }
+
+            if (target.matches('.catalog-menu_mobile__top-img')) {
+
+                catalogMenu.classList.remove('active');
+
+            }
 
             if (target.matches('.card-specs__item-value__img')) {
 
