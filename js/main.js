@@ -291,12 +291,11 @@ $(document).ready(function() {
         const cart = document.querySelector('.cart');
         const catalogItems = document.querySelectorAll('.catalog-item');
         const catalogMenu = document.querySelector('.catalog-menu_mobile');
-
-        console.log(catalogMenu);
+        const catalogAmount = document.querySelectorAll('.catalog-amount');
 
         let catalogItemFlexBasis;
 
-        if (catalogItems) {
+        if (catalogItems.length != 0) {
 
             catalogItemFlexBasis = getComputedStyle(document.querySelector('.catalog-item')).flexBasis;
 
@@ -354,9 +353,17 @@ $(document).ready(function() {
 
             }
 
-            if (target.closest('.catalog-amount')) {
+            if (target.matches('.catalog-amount')) {
 
-                if (target.closest('.catalog-amount__full')) {
+                catalogAmount.forEach(function(item) {
+
+                    item.classList.remove('active');
+
+                });
+
+                if (target.matches('.catalog-amount__full')) {
+
+                    target.classList.add('active');
 
                     catalogItems.forEach(function(item) {
 
@@ -365,6 +372,8 @@ $(document).ready(function() {
                     });
 
                 } else {
+
+                    target.classList.add('active');
 
                     catalogItems.forEach(function(item) {
 
