@@ -3,6 +3,7 @@
 - [card.html](https://iv-tsim.ru/levelpro/card.html) - Карточка товара
 - [catalog.html](https://iv-tsim.ru/levelpro/catalog.html) - Каталог
 - [catalogPage.html](https://iv-tsim.ru/levelpro/catalogPage.html) - Основная страница каталога
+- [contacts.html](https://iv-tsim.ru/levelpro/contacts.html) - Контакты
 - [index.html](https://iv-tsim.ru/levelpro/index.html) - Главная страница
 - [news.html](https://iv-tsim.ru/levelpro/news.html) - Новости
 - [newsCard.html](https://iv-tsim.ru/levelpro/newsCard.html) - Карточка новости
