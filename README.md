@@ -9,5 +9,6 @@
 - [newsCard.html](https://iv-tsim.ru/levelpro/newsCard.html) - Карточка новости
 - [page.html](https://iv-tsim.ru/levelpro/page.html) - Типовая страница
 - [recommendation.html](https://iv-tsim.ru/levelpro/recommendation.html) - Рекомендации
+- [search.html](https://iv-tsim.ru/levelpro/search.html) - Поиск по каталогу
 - [sign.html](https://iv-tsim.ru/levelpro/sign.html) - Вход/регистрация
 - [video.html](https://iv-tsim.ru/levelpro/video.html) - Видео
