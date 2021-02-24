@@ -603,7 +603,7 @@ textarea {
     margin-right: 0;
     margin-left: 15px;
   }
-  .header-search {
+  .header-bottom__right .header-search {
     display: none;
   }
   .header-search_mobile {
@@ -5719,6 +5719,49 @@ textarea {
 @media (max-width: 600px) {
   .contacts {
     padding-bottom: 40px;
+  }
+}
+
+.search-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+}
+
+.search-catalog {
+  margin-bottom: 50px;
+}
+
+.search-catalog .header-search {
+  max-width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .search-list {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+  .search-catalog {
+    margin-bottom: 40px;
+  }
+  .search-catalog .header-search {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .search-catalog .header-search {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .search-catalog .header-search {
+    max-width: 100%;
   }
 }
 
