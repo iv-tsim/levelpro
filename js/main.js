@@ -31,6 +31,25 @@ $(document).ready(function() {
 
         }
 
+        let heroSlider = new Swiper('.hero-slider', {
+
+            speed: 600,
+            spaceBetween: 15,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            observer: true,
+            observeParents: true,
+            pagination: {
+                el: '.hero-pagination .hero-pagination__container',
+                type: 'bullets',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<div class="' + className + ' hero-pagination__item"><div class="hero-pagination__line"></div><div class="hero-pagination__number">' + (index + 1) + '</div></div>';
+                }
+            }
+
+        });
+
         let fashionSlider = new Swiper('.fashion-slider', {
 
             speed: 600,
@@ -305,8 +324,6 @@ $(document).ready(function() {
 
         }
 
-        const mobileMenuItems = document.querySelectorAll('.mobile-menu__menu .menu-item');
-
         function stopBodyScrolling() {
 
             document.body.style.position = 'fixed';
@@ -459,6 +476,8 @@ $(document).ready(function() {
                     destroyMenu();
 
                 } else {
+
+                    mobileMenu.classList.add('active');
 
                     stopBodyScrolling();
 
