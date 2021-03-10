@@ -207,7 +207,11 @@ $(document).ready(function() {
                     el: '.card-slider__dots',
                     type: 'bullets'
                 },
-                mousewheel: true,
+                mousewheel: {
+                    
+                    releaseOnEdges: true,
+                    
+                },
                 breakpoints: {
                     1000: {
                         direction: 'vertical',

@@ -45,7 +45,7 @@
         &__right
             display: flex
             align-items: center
-            margin: 0 85px
+            margin: 0 80px
             min-width: 240px
             flex-grow: 1
             max-width: 400px
@@ -61,8 +61,9 @@
             &:hover
                 color: $shiraz
     &-search
-        position: relative
-        flex-grow: 1
+        &__wrapper
+            position: relative
+            flex-grow: 1
         &__text
             border-radius: 60px
             border: 1px solid $mischka
@@ -133,23 +134,50 @@
     &-cart
         display: none
 
-@media (max-width: 1350px)
-    .header
-        &-bottom
-            &__right
-                margin: 0 60px
+.title-search
+    &-result
+        border: 1px solid #000
+    &-item
+        display: flex
+        align-items: center
+        background-color: #fff
+        border-bottom: 1px solid #000
+        padding: 10px
+        &:last-child
+            border-bottom: none
+        a
+            color: #000
+            transition: .3s color
+        &:hover
+            a
+                color: $shiraz
 
-@media (max-width: 1250px)
+.img-search-item
+    margin-right: 10px
+
+@media (max-width: 1360px)
     .header
-        &-logo
-            &__img
-                width: 250px
-        &-nav
-            &__item
-                margin-right: 35px
         &-bottom
             &__right
                 margin: 0 50px
+
+@media (max-width: 1300px)
+    .header
+        &-logo
+            &__img
+                width: 230px
+        &-nav
+            &__item
+                margin-right: 30px
+        &-bottom
+            &__right
+                margin: 0 50px
+
+@media (max-width: 1200px)
+    .header
+        &-bottom
+            &__right
+                margin: 0 30px
 
 @media (max-width: 1150px)
     .header
