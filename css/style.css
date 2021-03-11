@@ -234,6 +234,25 @@ textarea {
   margin-bottom: 60px;
 }
 
+.line {
+  -webkit-transform: translateY(110%);
+          transform: translateY(110%);
+  -webkit-transition: 0.6s -webkit-transform cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+  transition: 0.6s -webkit-transform cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+  transition: 0.6s transform cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+  transition: 0.6s transform cubic-bezier(0.19, 1, 0.22, 1) 0.2s, 0.6s -webkit-transform cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+}
+
+.line-wrapper {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.line-container.active .line {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 @media (max-width: 1300px) {
   .title_reallyBig {
     font-size: 44px;

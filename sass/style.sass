@@ -166,6 +166,16 @@ textarea
     &-title
         margin-bottom: 60px
 
+.line
+    transform: translateY(110%)
+    transition: .6s transform cubic-bezier(0.19, 1, 0.22, 1) .2s
+    &-wrapper
+        overflow: hidden
+        display: inline-block
+    &-container.active
+        .line
+            transform: translateY(0)
+
 @media (max-width: 1300px)
     .title
         &_reallyBig

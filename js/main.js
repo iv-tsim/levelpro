@@ -545,6 +545,93 @@ $(document).ready(function() {
             
         });
 
+        function splitByLines(array) {
+
+            array.forEach(function(el) {
+
+                let tmp = document.createElement('p');
+                    tmp = el.cloneNode(true);
+                    tmp.style.width = el.offsetWidth + 'px';
+                    tmp.style.position = 'absolute';
+                    tmp.style.left = '-2000px';
+                    tmp.innerHTML = 'foo';
+                    document.body.appendChild(tmp);
+            
+                let content = el.textContent.split(''),
+                    oneLineHeight = tmp.scrollHeight,
+                    lines = [],
+                    i = 0;
+            
+                while (i < content.length) {
+
+                    let line = tmp.innerHTML = '';
+
+                    while (i < content.length && tmp.scrollHeight <= oneLineHeight) {
+
+                        tmp.innerHTML = line += content[i++];
+
+                    }
+
+                    let lineEndIndex = i === content.length ? i : line.lastIndexOf(' ') + 1;
+                    lines.push(content.splice(0, lineEndIndex).join(''));
+                    i = 0;
+
+                }
+
+                tmp.remove();
+                el.innerHTML = lines.map(function(line) {return '<div class="line-wrapper"><div class="line">' + line + '</div></div>'}).join('');
+
+            });
+
+        }
+
+        const lineContainers = document.querySelectorAll('.line-container');
+
+        splitByLines(lineContainers);
+
+        function isScrolledIntoView(elements) {
+
+            return Array.from(elements).filter(function(item) {
+
+                let rect = item.getBoundingClientRect();
+                let elemTop = rect.top;
+                let elemBottom = rect.bottom;
+
+                if (elemTop < window.innerHeight && elemBottom >= 0) {
+
+                    return item;
+
+                }
+
+            });
+
+        }
+
+        
+        window.addEventListener('scroll', function() {
+
+            if (isScrolledIntoView(lineContainers).length != 0) {
+
+                isScrolledIntoView(lineContainers).forEach(function(item) {
+
+                    item.classList.add('active');
+                    
+
+                });
+
+            } else {
+
+                lineContainers.forEach(function(item) {
+
+                    item.classList.remove('active');
+                    
+
+                });
+
+            }
+
+        });
+
         OverlayScrollbars(document.querySelector('.cart-main'), {});
 
     });
