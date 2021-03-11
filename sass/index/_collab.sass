@@ -19,7 +19,19 @@
         background-color: $wildSand
         position: relative
         overflow: hidden
-        transition: .3s color, .3s background-color
+        transition: 1.3s color cubic-bezier(.74,0,.24,.99)
+        &::after
+            height: 100%
+            width: 100%
+            position: absolute
+            display: block
+            content: ''
+            left: 0
+            top: 0
+            transform: translateY(101%)
+            background-color: $codGray
+            will-change: transform
+            transition: 1.3s transform cubic-bezier(.74,0,.24,.99)
         &__top
             flex-grow: 1
             position: relative
@@ -51,12 +63,10 @@
             left: -85px
             top: -40px
             line-height: 70%
-            transition: .3s color
         &:hover
-            background-color: $codGray
             color: #fff
-            .collab-item__number
-                color: $codGray
+            &::after
+                transform: translateY(0)
 
 @media (max-width: 1300px)
     .collab

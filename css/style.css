@@ -3509,8 +3509,26 @@ textarea {
   background-color: #F4F4F4;
   position: relative;
   overflow: hidden;
-  -webkit-transition: .3s color, .3s background-color;
-  transition: .3s color, .3s background-color;
+  -webkit-transition: 1.3s color cubic-bezier(0.74, 0, 0.24, 0.99);
+  transition: 1.3s color cubic-bezier(0.74, 0, 0.24, 0.99);
+}
+
+.collab-item::after {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+  top: 0;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  background-color: #121212;
+  will-change: transform;
+  -webkit-transition: 1.3s -webkit-transform cubic-bezier(0.74, 0, 0.24, 0.99);
+  transition: 1.3s -webkit-transform cubic-bezier(0.74, 0, 0.24, 0.99);
+  transition: 1.3s transform cubic-bezier(0.74, 0, 0.24, 0.99);
+  transition: 1.3s transform cubic-bezier(0.74, 0, 0.24, 0.99), 1.3s -webkit-transform cubic-bezier(0.74, 0, 0.24, 0.99);
 }
 
 .collab-item__top {
@@ -3560,17 +3578,15 @@ textarea {
   left: -85px;
   top: -40px;
   line-height: 70%;
-  -webkit-transition: .3s color;
-  transition: .3s color;
 }
 
 .collab-item:hover {
-  background-color: #121212;
   color: #fff;
 }
 
-.collab-item:hover .collab-item__number {
-  color: #121212;
+.collab-item:hover::after {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 @media (max-width: 1300px) {
