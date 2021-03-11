@@ -50,7 +50,26 @@ $(document).ready(function() {
 
         });
 
-        let fashionSlider = new Swiper('.fashion-slider', {
+        let fashionTextSlider = new Swiper('.fashion-slider__text', {
+
+            speed: 600,
+            spaceBetween: 15,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            observer: true,
+            observeParents: true,
+            touchEventsTarget: 'wrapper',
+            on: {
+                slideChange() {
+
+                    fashionImgSlider.slideTo(this.realIndex);
+
+                }
+            }
+
+        });
+
+        let fashionImgSlider = new Swiper('.fashion-slider__img', {
 
             speed: 600,
             spaceBetween: 15,
@@ -70,6 +89,15 @@ $(document).ready(function() {
                     return '<div class="slider-count__current">' + addZero(current) + '</div>' +
                             '<div class="slider-count__dec"></div>' +
                             '<div class="slider-count__total">' + addZero(total) + '</div>';
+                }
+            },
+            on: {
+                slideChange() {
+
+                    let index = this.realIndex
+
+                    setTimeout(function() {fashionTextSlider.slideTo(index)}, 300);
+
                 }
             }
 

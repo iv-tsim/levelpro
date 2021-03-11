@@ -29,12 +29,16 @@
         height: 15px
         svg
             height: 15px
-            fill: $shiraz
+            fill: #000
+            transition: .3s fill
+        &:hover
+            svg
+                fill: $shiraz
         &__prev
             margin-right: 30px
     &-arrow.swiper-button-disabled
         svg
-            fill: #000
+            fill: $silver
 
 @media (max-width: 1100px)
     .slider

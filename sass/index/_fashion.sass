@@ -5,13 +5,10 @@
         margin-bottom: 100px
         line-height: 150%
         max-width: 780px
-    &-item
+    &-main
         display: flex
         align-items: flex-start
-        &__text
-            margin-top: 50px
-            width: 33.33%
-            margin-right: 100px
+    &-item
         &__title
             margin-bottom: 15px
             span
@@ -26,18 +23,12 @@
             background-repeat: no-repeat
             background-position: center center
             background-size: cover
-            flex-grow: 1
             position: relative
             &-inner
                 width: 100%
                 display: block
                 opacity: 0
                 visibility: hidden
-            &-dec
-                position: absolute
-                right: 0
-                bottom: 0
-                width: 36%
             &-year
                 -webkit-text-stroke: 1px #fff
                 position: absolute
@@ -50,8 +41,21 @@
     &-slider
         &__bottom
             margin-top: 50px
-            justify-content: flex-end
-            margin-right: 28%
+            margin-left: 60px
+        &__text
+            min-width: 33.33%
+            width: 33.33%
+            margin-top: 50px
+            margin-right: 100px
+        &__img
+            flex-grow: 1
+            position: relative
+            &-dec
+                position: absolute
+                right: 0
+                bottom: 69px
+                width: 36%
+                z-index: 1
 
 @media (max-width: 1300px)
     .fashion

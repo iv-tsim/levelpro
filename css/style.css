@@ -379,6 +379,12 @@ textarea {
 .header-lang__item {
   color: #000;
   font-size: 14px;
+  -webkit-transition: .3s color;
+  transition: .3s color;
+}
+
+.header-lang__item:hover {
+  color: #C20E1A;
 }
 
 .header-lang__item.active {
@@ -393,10 +399,22 @@ textarea {
   font-weight: 700;
   margin-right: 45px;
   color: #000;
+  -webkit-transition: .3s color;
+  transition: .3s color;
+}
+
+.header-phone:hover {
+  color: #C20E1A;
 }
 
 .header-email {
   color: #000;
+  -webkit-transition: .3s color;
+  transition: .3s color;
+}
+
+.header-email:hover {
+  color: #C20E1A;
 }
 
 .header-sign {
@@ -1029,6 +1047,12 @@ textarea {
 
 .slider-arrow svg {
   height: 15px;
+  fill: #000;
+  -webkit-transition: .3s fill;
+  transition: .3s fill;
+}
+
+.slider-arrow:hover svg {
   fill: #C20E1A;
 }
 
@@ -1037,7 +1061,7 @@ textarea {
 }
 
 .slider-arrow.swiper-button-disabled svg {
-  fill: #000;
+  fill: #C4C4C4;
 }
 
 @media (max-width: 1100px) {
@@ -1537,6 +1561,8 @@ textarea {
   margin-top: 7px;
   -webkit-transition: .3s transform;
   transition: .3s transform;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .menu-item__body {
@@ -2731,19 +2757,13 @@ textarea {
   max-width: 780px;
 }
 
-.fashion-item {
+.fashion-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-
-.fashion-item__text {
-  margin-top: 50px;
-  width: 33.33%;
-  margin-right: 100px;
 }
 
 .fashion-item__title {
@@ -2768,9 +2788,6 @@ textarea {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   position: relative;
 }
 
@@ -2779,13 +2796,6 @@ textarea {
   display: block;
   opacity: 0;
   visibility: hidden;
-}
-
-.fashion-item__img-dec {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 36%;
 }
 
 .fashion-item__img-year {
@@ -2801,10 +2811,29 @@ textarea {
 
 .fashion-slider__bottom {
   margin-top: 50px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 28%;
+  margin-left: 60px;
+}
+
+.fashion-slider__text {
+  min-width: 33.33%;
+  width: 33.33%;
+  margin-top: 50px;
+  margin-right: 100px;
+}
+
+.fashion-slider__img {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+}
+
+.fashion-slider__img-dec {
+  position: absolute;
+  right: 0;
+  bottom: 69px;
+  width: 36%;
+  z-index: 1;
 }
 
 @media (max-width: 1300px) {
