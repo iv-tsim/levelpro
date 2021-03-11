@@ -2843,19 +2843,17 @@ textarea {
   .fashion-text {
     margin-bottom: 70px;
   }
-  .fashion-item__text {
-    margin-top: 30px;
-    width: 37%;
-    margin-right: 70px;
-  }
   .fashion-item__location {
     margin-bottom: 30px;
   }
   .fashion-item__desc {
     margin-bottom: 70px;
   }
-  .fashion-slider__bottom {
-    margin-right: 20%;
+  .fashion-slider__text {
+    width: 37%;
+    min-width: 37%;
+    margin-top: 30px;
+    margin-right: 70px;
   }
 }
 
@@ -2875,11 +2873,6 @@ textarea {
   .fashion-text {
     margin-bottom: 50px;
   }
-  .fashion-item__text {
-    margin-top: 25px;
-    width: 43%;
-    margin-right: 50px;
-  }
   .fashion-item__location {
     margin-bottom: 20px;
   }
@@ -2891,7 +2884,15 @@ textarea {
   }
   .fashion-slider__bottom {
     margin-top: 40px;
-    margin-right: 17%;
+  }
+  .fashion-slider__text {
+    min-width: 43%;
+    margin-top: 25px;
+    width: 43%;
+    margin-right: 50px;
+  }
+  .fashion-slider__img-dec {
+    bottom: 59px;
   }
 }
 
@@ -2900,33 +2901,34 @@ textarea {
     margin-bottom: 30px;
     max-width: 100%;
   }
-  .fashion-item {
+  .fashion-item__desc {
+    margin-bottom: 30px;
+  }
+  .fashion-slider__bottom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .fashion-slider__text {
+    width: 100%;
+    margin-right: 0;
+  }
+  .fashion-slider__img {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .fashion-main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .fashion-item__img {
-    width: 70%;
-    margin: 0 auto;
-  }
-  .fashion-item__text {
-    width: 100%;
-    margin-right: 0;
-  }
-  .fashion-item__desc {
-    margin-bottom: 30px;
-  }
-  .fashion-slider__bottom {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    margin-right: 0;
-  }
 }
 
 @media (max-width: 900px) {
-  .fashion-item__img {
+  .fashion-slider__img {
     width: 80%;
   }
 }
@@ -2938,9 +2940,6 @@ textarea {
   .fashion-text {
     margin-bottom: 25px;
   }
-  .fashion-item__img {
-    width: 85%;
-  }
   .fashion-item__desc {
     margin-bottom: 25px;
   }
@@ -2950,10 +2949,16 @@ textarea {
   .fashion-slider__bottom {
     margin-top: 30px;
   }
+  .fashion-slider__img {
+    width: 85%;
+  }
+  .fashion-slider__img-dec {
+    bottom: 49px;
+  }
 }
 
 @media (max-width: 650px) {
-  .fashion-item__img {
+  .fashion-slider__img {
     width: 100%;
   }
 }
