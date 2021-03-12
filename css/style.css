@@ -2155,9 +2155,6 @@ textarea {
 }
 
 .cart-item__body-bottom {
-  padding-bottom: 12px;
-  padding-top: 5px;
-  border-bottom: 1px solid #E5E5E5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2167,6 +2164,12 @@ textarea {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.cart-item__body-bottom__wrapper {
+  padding-bottom: 12px;
+  padding-top: 5px;
+  border-bottom: 1px solid #E5E5E5;
 }
 
 .cart-item__text {
@@ -2207,13 +2210,26 @@ textarea {
 }
 
 .cart-item__quantity-number {
-  min-width: 26px;
+  width: 35px;
   margin: 0 10px;
   text-align: center;
+  border: none;
+}
+
+.cart-item__quantity-number::-webkit-outer-spin-button, .cart-item__quantity-number::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .cart-item__delete-wrapper {
   cursor: pointer;
+}
+
+.cart-item__warning {
+  font-size: 11px;
+  color: #C20E1A;
+  margin-top: 9px;
 }
 
 .cart-bottom {
@@ -5240,6 +5256,24 @@ textarea {
   visibility: visible;
 }
 
+.card-color__item.inactive {
+  cursor: default;
+  background-image: url(../img/card/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.card-color__item.inactive:hover::after {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card-color__item.inactive:hover .card-color__item-img {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .card-size {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5270,6 +5304,28 @@ textarea {
   color: #fff;
 }
 
+.card-size__item.inactive {
+  cursor: default;
+  position: relative;
+}
+
+.card-size__item.inactive:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.card-size__item.inactive::before {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: #000;
+  opacity: 0.4;
+}
+
 .card-quantity {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5282,10 +5338,16 @@ textarea {
 
 .card-quantity__number {
   margin: 0 20px;
-  min-width: 85px;
+  width: 85px;
   text-align: center;
   border: 1px solid;
   padding: 7px 7px;
+}
+
+.card-quantity__number::-webkit-outer-spin-button, .card-quantity__number::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .card-quantity__img {

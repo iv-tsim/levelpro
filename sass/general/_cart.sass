@@ -64,12 +64,13 @@
         &__body
             flex-grow: 1
             &-bottom
-                padding-bottom: 12px
-                padding-top: 5px
-                border-bottom: 1px solid $mercury
                 display: flex
                 justify-content: space-between
                 align-items: flex-end
+                &__wrapper
+                    padding-bottom: 12px
+                    padding-top: 5px
+                    border-bottom: 1px solid $mercury
         &__text
             flex-grow: 1
             font-size: 14px
@@ -91,12 +92,21 @@
             &-img
                 cursor: pointer
             &-number
-                min-width: 26px
+                width: 35px
                 margin: 0 10px
                 text-align: center
+                border: none
+                &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+                    display: none
+                    -webkit-appearance: none
+                    margin: 0
         &__delete
             &-wrapper
                 cursor: pointer
+        &__warning
+            font-size: 11px
+            color: $shiraz
+            margin-top: 9px
     &-bottom
         box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.25)
         padding: 30px 50px

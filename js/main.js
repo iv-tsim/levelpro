@@ -69,6 +69,8 @@ $(document).ready(function() {
 
         });
 
+        let sliderFlag = 0;
+
         let fashionImgSlider = new Swiper('.fashion-slider__img', {
 
             speed: 600,
@@ -96,7 +98,19 @@ $(document).ready(function() {
 
                     let index = this.realIndex
 
-                    setTimeout(function() {fashionTextSlider.slideTo(index)}, 300);
+                    if (!sliderFlag) {
+
+                        setTimeout(function() {fashionTextSlider.slideTo(index)}, 300);
+                        
+                        sliderFlag = 1;
+
+                    }
+
+
+                },
+                slideChangeTransitionEnd() {
+
+                    sliderFlag = 0;
 
                 }
             }
@@ -458,19 +472,23 @@ $(document).ready(function() {
 
             if (target.matches('.card-size__item')) {
 
-                cardSizes.forEach(function(item) {
+                if (!target.classList.contains('inactive')) {
 
-                    item.classList.remove('active');
+                    cardSizes.forEach(function(item) {
 
-                });
+                        item.classList.remove('active');
+    
+                    });
+    
+                    target.classList.add('active');
 
-                target.classList.add('active');
+                }
 
             }
 
             if (target.matches('.card-quantity__img')) {
 
-                let cardNumberData = +cardNumber.dataset.number;
+                let cardNumberData = +cardNumber.value;
 
                 if (target.classList.contains('card-quantity__minus')) {
 
@@ -486,8 +504,8 @@ $(document).ready(function() {
 
                 }
 
-                cardNumber.dataset.number = cardNumberData
-                cardNumber.textContent = cardNumberData;
+                cardNumber.value = cardNumberData;
+                cardNumber.dataset.number = cardNumber.value;
 
             }
 
@@ -543,6 +561,24 @@ $(document).ready(function() {
 
             }
             
+        });
+
+        document.addEventListener('input', function(event) {
+
+            const target = event.target;
+
+            if (target.matches('.card-quantity__number')) {
+
+                target.dataset.number = target.value;
+
+            }
+
+            if (target.matches('.cart-item__quantity-number')) {
+
+                target.dataset.number = target.value;
+
+            }
+
         });
 
         function splitByLines(array) {
