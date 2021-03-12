@@ -571,11 +571,11 @@ $(document).ready(function() {
 
             if (target.matches('.card-quantity__number')) {
 
-                target.dataset.number = target.value;
+                if (target.value == '') {
 
-            }
+                    target.value = 1;
 
-            if (target.matches('.cart-item__quantity-number')) {
+                }
 
                 target.dataset.number = target.value;
 
