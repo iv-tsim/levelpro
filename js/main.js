@@ -44,7 +44,9 @@ $(document).ready(function() {
                 type: 'bullets',
                 clickable: true,
                 renderBullet: function (index, className) {
+
                     return '<div class="' + className + ' hero-pagination__item"><div class="hero-pagination__line"></div><div class="hero-pagination__number">' + (index + 1) + '</div></div>';
+                    
                 }
             }
 
