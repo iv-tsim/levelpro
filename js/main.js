@@ -587,7 +587,13 @@ $(document).ready(function() {
 
         const lineContainers = document.querySelectorAll('.line-container');
 
-        splitByLines(lineContainers);
+        if (lineContainers) {
+
+            splitByLines(lineContainers);
+
+        }
+
+        const lineWrappers = document.querySelectorAll('.line-wrapper');
 
         function isScrolledIntoView(elements) {
 
@@ -610,9 +616,9 @@ $(document).ready(function() {
         
         window.addEventListener('scroll', function() {
 
-            if (isScrolledIntoView(lineContainers).length != 0) {
+            if (isScrolledIntoView(lineWrappers).length != 0) {
 
-                isScrolledIntoView(lineContainers).forEach(function(item) {
+                isScrolledIntoView(lineWrappers).forEach(function(item) {
 
                     item.classList.add('active');
                     
@@ -621,13 +627,32 @@ $(document).ready(function() {
 
             } else {
 
-                lineContainers.forEach(function(item) {
+                lineWrappers.forEach(function(item) {
 
                     item.classList.remove('active');
                     
 
                 });
 
+            }
+
+        });
+
+        const mask1 = document.querySelector('.mask-dec__img.mask-dec__img_1');
+        const mask2 = document.querySelector('.mask-dec__img.mask-dec__img_2');
+        const mask3 = document.querySelector('.mask-dec__img.mask-dec__img_3');
+
+        window.addEventListener('mousemove', function(event) {
+
+            let x = event.clientX / window.innerWidth;
+            let y = event.clientY / window.innerHeight;
+
+            if (mask1 || mask2 || mask3) {
+
+                mask1.style.transform = 'translate(-' + x * 30 + 'px, -' + y * 35 + 'px)';
+                mask2.style.transform = 'translate(+' + x * 25 + 'px, -' + y * 30 + 'px)';
+                mask3.style.transform = 'translate(-' + x * 30 + 'px, +' + y * 20 + 'px)';
+                
             }
 
         });

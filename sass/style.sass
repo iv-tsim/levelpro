@@ -168,11 +168,12 @@ textarea
 
 .line
     transform: translateY(110%)
-    transition: .6s transform cubic-bezier(0.19, 1, 0.22, 1) .2s
+    transition: .6s transform cubic-bezier(0.19, 1, 0.22, 1) .3s
+    will-change: transform
     &-wrapper
         overflow: hidden
         display: inline-block
-    &-container.active
+    &-wrapper.active
         .line
             transform: translateY(0)
 

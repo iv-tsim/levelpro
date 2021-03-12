@@ -237,10 +237,11 @@ textarea {
 .line {
   -webkit-transform: translateY(110%);
           transform: translateY(110%);
-  -webkit-transition: 0.6s -webkit-transform cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
-  transition: 0.6s -webkit-transform cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
-  transition: 0.6s transform cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
-  transition: 0.6s transform cubic-bezier(0.19, 1, 0.22, 1) 0.2s, 0.6s -webkit-transform cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+  -webkit-transition: 0.6s -webkit-transform cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  transition: 0.6s -webkit-transform cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  transition: 0.6s transform cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  transition: 0.6s transform cubic-bezier(0.19, 1, 0.22, 1) 0.3s, 0.6s -webkit-transform cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  will-change: transform;
 }
 
 .line-wrapper {
@@ -248,7 +249,7 @@ textarea {
   display: inline-block;
 }
 
-.line-container.active .line {
+.line-wrapper.active .line {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -2773,7 +2774,7 @@ textarea {
 .fashion-text {
   margin-bottom: 100px;
   line-height: 150%;
-  max-width: 780px;
+  max-width: 765px;
 }
 
 .fashion-main {
