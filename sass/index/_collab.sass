@@ -19,7 +19,9 @@
         background-color: $wildSand
         position: relative
         overflow: hidden
-        transition: 1.3s color cubic-bezier(.74,0,.24,.99)
+        transform: translate3d(0, 100%, 0)
+        opacity: 0
+        transition: 1.3s color cubic-bezier(.74,0,.24,.99), opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1),transform 1.5s cubic-bezier(0.19, 1, 0.22, 1)
         &::after
             height: 100%
             width: 100%
@@ -67,6 +69,9 @@
             color: #fff
             &::after
                 transform: translateY(0)
+    &-item.active
+        transform: translate3d(0, 0, 0)
+        opacity: 1
 
 @media (max-width: 1300px)
     .collab

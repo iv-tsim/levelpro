@@ -571,7 +571,7 @@ $(document).ready(function() {
 
             if (target.matches('.card-quantity__number')) {
 
-                if (target.value == '') {
+                if (target.value == '' || target.value <= 0) {
 
                     target.value = 1;
 
@@ -632,6 +632,8 @@ $(document).ready(function() {
         }
 
         const lineWrappers = document.querySelectorAll('.line-wrapper');
+        const collabItems = document.querySelectorAll('.collab-item');
+        const AboutItems = document.querySelectorAll('.about-item');
 
         function isScrolledIntoView(elements) {
 
@@ -651,28 +653,37 @@ $(document).ready(function() {
 
         }
 
-        
-        window.addEventListener('scroll', function() {
+        function ActiveIfScrolledIntoView(items) {
 
-            if (isScrolledIntoView(lineWrappers).length != 0) {
+            if (isScrolledIntoView(items).length != 0) {
 
-                isScrolledIntoView(lineWrappers).forEach(function(item) {
+                isScrolledIntoView(items).forEach(function(item) {
 
                     item.classList.add('active');
-                    
 
                 });
 
             } else {
 
-                lineWrappers.forEach(function(item) {
+                items.forEach(function(item) {
 
                     item.classList.remove('active');
-                    
 
                 });
 
             }
+
+        }
+
+        ActiveIfScrolledIntoView(lineWrappers);
+        ActiveIfScrolledIntoView(collabItems);
+        ActiveIfScrolledIntoView(AboutItems);
+        
+        window.addEventListener('scroll', function() {
+
+            ActiveIfScrolledIntoView(lineWrappers);
+            ActiveIfScrolledIntoView(collabItems);
+            ActiveIfScrolledIntoView(AboutItems);
 
         });
 

@@ -3550,8 +3550,13 @@ textarea {
   background-color: #F4F4F4;
   position: relative;
   overflow: hidden;
-  -webkit-transition: 1.3s color cubic-bezier(0.74, 0, 0.24, 0.99);
-  transition: 1.3s color cubic-bezier(0.74, 0, 0.24, 0.99);
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+  opacity: 0;
+  -webkit-transition: 1.3s color cubic-bezier(0.74, 0, 0.24, 0.99), opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 1.3s color cubic-bezier(0.74, 0, 0.24, 0.99), opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 1.3s color cubic-bezier(0.74, 0, 0.24, 0.99), opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1), transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 1.3s color cubic-bezier(0.74, 0, 0.24, 0.99), opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1), transform 1.5s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .collab-item::after {
@@ -3628,6 +3633,12 @@ textarea {
 .collab-item:hover::after {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.collab-item.active {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
 }
 
 @media (max-width: 1300px) {
@@ -3895,6 +3906,13 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1), transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1), transform 1.5s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .about-item:nth-child(2n - 1) {
@@ -3913,6 +3931,12 @@ textarea {
 .about-item__title {
   margin-bottom: 15px;
   max-width: 210px;
+}
+
+.about-item.active {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
 }
 
 @media (max-width: 1300px) {
