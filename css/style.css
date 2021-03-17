@@ -6647,6 +6647,7 @@ textarea {
   background-color: #F4F4F4;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  position: relative;
 }
 
 .brand-app__dec-inner {
@@ -6654,6 +6655,12 @@ textarea {
   width: 100%;
   opacity: 0;
   visibility: hidden;
+}
+
+.brand-app__dec-dec {
+  position: absolute;
+  right: -200px;
+  top: -40px;
 }
 
 .alertify-notifier .ajs-message.ajs-error {
