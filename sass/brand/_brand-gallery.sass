@@ -1,0 +1,50 @@
+.brand
+    &-gallery
+        &__item
+            display: flex
+            &-text, &-photo
+                flex-basis: 50%
+            &-photo
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: cover
+                &__inner
+                    width: 100%
+                    display: block
+                    opacity: 0
+                    visibility: hidden
+                &__list
+                    width: calc(100% + 4px)
+                    margin-left: -2px
+                    display: flex
+                    flex-wrap: wrap
+                    &-item
+                        margin: 0 2px 4px 2px
+                        flex-basis: 400px
+                        flex-grow: 1
+                        background-repeat: no-repeat
+                        background-position: center center
+                        background-size: cover
+                        &__inner
+                            width: 100%
+                            display: block
+                            opacity: 0
+                            visibility: hidden
+            &-text
+                padding-top: 130px
+                padding-left: calc((100% - 1400px) / 2)
+                padding-right: 140px
+                &__title
+                    margin-bottom: 40px
+                &__text
+                    margin-bottom: 70px
+                    p
+                        margin-bottom: 25px
+                        &:last-child
+                            margin-bottom: 0
+            &:nth-child(even)
+                flex-direction: row-reverse
+                .brand-gallery__item-text
+                    padding-left: 140px
+                    padding-right: calc((100% - 1400px) / 2)
+                
