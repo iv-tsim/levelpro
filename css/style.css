@@ -2367,10 +2367,6 @@ textarea {
 }
 
 @media (max-width: 1050px) {
-  .cart {
-    width: 600px;
-    right: -600px;
-  }
   .cart-top, .cart-main {
     padding-right: 20px;
     padding-left: 20px;
@@ -5350,6 +5346,42 @@ textarea {
   opacity: 0.4;
 }
 
+.card-combined {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  margin-bottom: 20px;
+}
+
+.card-combined__item {
+  margin: 0 10px 10px 10px;
+  -ms-flex-preferred-size: 45px;
+      flex-basis: 45px;
+}
+
+.card-combined__item-color {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #E5E5E5;
+  margin-bottom: 5px;
+}
+
+.card-combined__item-size {
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  -webkit-transition: .3s color;
+  transition: .3s color;
+}
+
+.card-combined__item:hover .card-combined__item-size {
+  color: #C20E1A;
+}
+
 .card-quantity {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5433,6 +5465,9 @@ textarea {
   }
   .card-color__item {
     margin: 0 7px 14px 7px;
+  }
+  .card-combined {
+    margin-bottom: 10px;
   }
   .card-bottom__text {
     margin-left: 40px;
@@ -5531,6 +5566,12 @@ textarea {
   .card-bottom__text {
     margin-left: 25px;
     font-size: 14px;
+  }
+  .card-combined {
+    width: calc(100% + 16px);
+  }
+  .card-combined__item {
+    margin: 0 8px 8px 8px;
   }
 }
 
@@ -6532,6 +6573,55 @@ textarea {
   width: 4px;
   background-color: #000;
   border-radius: 50%;
+}
+
+@media (max-width: 1430px) {
+  .brand-home {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    margin-bottom: 90px;
+  }
+  .brand-home__item {
+    margin: 0 30px 30px 30px;
+  }
+  .brand-home__item-img {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .brand-home {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-bottom: 60px;
+  }
+  .brand-home__item {
+    margin: 0 15px 25px 15px;
+  }
+  .brand-home__item-img {
+    margin-bottom: 30px;
+  }
+  .brand-home__item-title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .brand-home {
+    margin-bottom: 40px;
+  }
+  .brand-home__item-img {
+    margin-bottom: 15px;
+  }
+  .brand-home__item-title {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .brand-home {
+    margin-bottom: 20px;
+  }
 }
 
 .brand-gallery {
