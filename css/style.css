@@ -6337,6 +6337,82 @@ textarea {
   line-height: 120%;
 }
 
+@media (max-width: 1430px) {
+  .brand-hero {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-bottom: 50px;
+  }
+  .brand-hero__main {
+    padding: 58px;
+  }
+  .brand-hero__title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .brand-hero__main {
+    padding: 50px;
+  }
+  .brand-hero__title {
+    font-size: 48px;
+  }
+  .brand-hero__subtitle {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  .brand-hero {
+    margin-bottom: 40px;
+  }
+  .brand-hero__main {
+    padding: 40px;
+  }
+  .brand-hero__title {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  .brand-hero__subtitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .brand-hero {
+    margin-bottom: 30px;
+  }
+  .brand-hero__main {
+    padding: 15px;
+  }
+  .brand-hero__title {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  .brand-hero__subtitle {
+    font-size: 18px;
+  }
+  .brand-hero__subtitle div {
+    display: inline;
+  }
+}
+
+@media (max-width: 400px) {
+  .brand-hero__title {
+    font-size: 22px;
+  }
+  .brand-hero__subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 350px) {
+  .brand-hero__main {
+    padding: 10px;
+  }
+}
+
 .brand-list {
   display: -webkit-box;
   display: -ms-flexbox;
