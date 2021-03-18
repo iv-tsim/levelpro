@@ -368,11 +368,21 @@ $(document).ready(function() {
 
         }
 
+        let div = document.createElement('div');
+
+        div.style.overflowY = 'scroll';
+        div.style.width = '50px';
+        div.style.height = '50px';
+        document.body.append(div);
+        let scrollWidth = div.offsetWidth - div.clientWidth;
+        div.remove();
+
         function stopBodyScrolling() {
 
+            document.body.style.top = `-${window.scrollY}px`;
             document.body.style.position = 'fixed';
             document.body.style.width = '100%';
-            document.body.style.top = `-${window.scrollY}px`;
+            document.body.style.paddingRight = `${scrollWidth}px`;
 
         }
 
@@ -383,6 +393,7 @@ $(document).ready(function() {
             document.body.style.position = '';
             document.body.style.top = '';
             window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            document.body.style.paddingRight = 0;
 
         }
 
