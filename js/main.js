@@ -554,12 +554,15 @@ $(document).ready(function() {
             if (cart.classList.contains('active') && (target.closest('.cart-cross') || !target.closest('.cart'))) {
 
                 cart.classList.remove('active');
+                continueBodyScrolling();
+                
 
             }
 
             if (target.closest('.cart-circle') || target.closest('.header-cart')) {
 
                 cart.classList.add('active');
+                stopBodyScrolling();
 
             }
             
