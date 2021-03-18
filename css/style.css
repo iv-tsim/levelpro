@@ -7059,7 +7059,7 @@ textarea {
 
 @media (max-width: 1300px) {
   .brand-app {
-    margin-bottom: 150px;
+    margin-bottom: 170px;
   }
   .brand-app__dec {
     -ms-flex-preferred-size: 35%;
@@ -7068,7 +7068,6 @@ textarea {
   .brand-app__dec-dec {
     max-width: 700px;
     right: -150px;
-    top: 0px;
   }
   .brand-app__main {
     -ms-flex-preferred-size: 50%;
@@ -7078,12 +7077,11 @@ textarea {
 
 @media (max-width: 1100px) {
   .brand-app {
-    margin-bottom: 120px;
+    margin-bottom: 150px;
   }
   .brand-app__dec-dec {
     max-width: 600px;
     right: -100px;
-    top: 0px;
   }
 }
 
@@ -7200,6 +7198,61 @@ textarea {
   width: 4px;
   border-radius: 50%;
   background-color: #000;
+}
+
+@media (max-width: 1400px) {
+  .brand-advantages {
+    width: calc(100% + 80px);
+    margin-left: -40px;
+    margin-bottom: 50px;
+  }
+  .brand-advantages__item {
+    margin: 0 40px 60px 40px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .brand-advantages {
+    width: calc(100% + 36px);
+    margin-left: -20px;
+    margin-bottom: 40px;
+  }
+  .brand-advantages__item {
+    margin: 0 18px 40px 18px;
+  }
+  .brand-advantages__item-img {
+    margin-bottom: 20px;
+  }
+  .brand-advantages__item-title {
+    margin-bottom: 20px;
+  }
+  .brand-advantages__item-text p {
+    margin-bottom: 20px;
+  }
+  .brand-advantages__item-text ul li {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .brand-advantages {
+    margin-bottom: 20px;
+  }
+  .brand-advantages__item {
+    margin: 0 18px 25px 18px;
+  }
+  .brand-advantages__item-img {
+    margin-bottom: 15px;
+  }
+  .brand-advantages__item-title {
+    margin-bottom: 15px;
+  }
+  .brand-advantages__item-text p {
+    margin-bottom: 15px;
+  }
+  .brand-advantages__item-text ul li {
+    margin-bottom: 12px;
+  }
 }
 
 .alertify-notifier .ajs-message.ajs-error {
