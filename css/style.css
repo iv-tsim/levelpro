@@ -7057,6 +7057,73 @@ textarea {
   top: -40px;
 }
 
+@media (max-width: 1300px) {
+  .brand-app {
+    margin-bottom: 150px;
+  }
+  .brand-app__dec {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+  }
+  .brand-app__dec-dec {
+    max-width: 700px;
+    right: -150px;
+    top: 0px;
+  }
+  .brand-app__main {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .brand-app {
+    margin-bottom: 120px;
+  }
+  .brand-app__dec-dec {
+    max-width: 600px;
+    right: -100px;
+    top: 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .brand-app {
+    margin-bottom: 60px;
+  }
+  .brand-app__dec {
+    display: none;
+  }
+  .brand-app__main {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .brand-app__title {
+    margin-bottom: 25px;
+  }
+  .brand-app__subtitle {
+    margin-bottom: 20px;
+  }
+  .brand-app__item {
+    margin-bottom: 15px;
+  }
+  .brand-app__submit {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .brand-app {
+    margin-bottom: 40px;
+  }
+  .brand-app__title {
+    margin-bottom: 20px;
+  }
+  .brand-app__subtitle {
+    margin-bottom: 15px;
+  }
+}
+
 .brand-advantages {
   display: -webkit-box;
   display: -ms-flexbox;
