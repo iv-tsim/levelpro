@@ -15,3 +15,4 @@
 - [avanta.html](https://iv-tsim.ru/levelpro/avanta.html) - Страница бренда avanta
 - [home.html](https://iv-tsim.ru/levelpro/home.html) - Страница бренда levelprohome
 - [kids.html](https://iv-tsim.ru/levelpro/kids.html) - Страница бренда levelprokids
+- [exhibition.html](https://iv-tsim.ru/levelpro/exhibition.html) - Типовая страница выставки
