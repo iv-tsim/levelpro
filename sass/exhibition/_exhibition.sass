@@ -67,10 +67,13 @@
                 grid-row: auto / span 2
                 img
                     display: none
+    &-video
+        margin-bottom: 70px
+        text-align: center
 
 @media (max-width: 1300px)
     .exhibition
-        &-hero, &-gallery, &-text, &-galleryDefault, &-gallerySpecial, &-diploma, &-galleryCool
+        &-hero, &-gallery, &-text, &-galleryDefault, &-gallerySpecial, &-diploma, &-galleryCool, &-video
             margin-bottom: 60px
         &-galleryDefault
             &__item
@@ -85,7 +88,7 @@
 
 @media (max-width: 900px)
     .exhibition
-        &-hero, &-gallery, &-text, &-galleryDefault, &-gallerySpecial, &-diploma, &-galleryCool
+        &-hero, &-gallery, &-text, &-galleryDefault, &-gallerySpecial, &-diploma, &-galleryCool, &-video
             margin-bottom: 50px
         &-gallerySpecial
             grid-template-columns: repeat(2, 1fr)
@@ -99,7 +102,7 @@
 
 @media (max-width: 600px)
     .exhibition
-        &-hero, &-gallery, &-text, &-galleryDefault, &-gallerySpecial, &-diploma, &-galleryCool
+        &-hero, &-gallery, &-text, &-galleryDefault, &-gallerySpecial, &-diploma, &-galleryCool,&-video
             margin-bottom: 40px
         &-galleryDefault
             width: calc(100% + 20px)
@@ -126,5 +129,5 @@
 
 @media (max-width: 400px)
     .exhibition
-        &-hero, &-gallery, &-text, &-galleryDefault, &-gallerySpecial, &-diploma, &-galleryCool
+        &-hero, &-gallery, &-text, &-galleryDefault, &-gallerySpecial, &-diploma, &-galleryCool, &-video
             margin-bottom: 30px

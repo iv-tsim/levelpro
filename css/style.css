@@ -5225,12 +5225,6 @@ textarea {
       flex-basis: 80px;
 }
 
-.card-top {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
 .card-info {
   -ms-flex-item-align: stretch;
       align-self: stretch;
@@ -7470,8 +7464,13 @@ textarea {
   display: none;
 }
 
+.exhibition-video {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
 @media (max-width: 1300px) {
-  .exhibition-hero, .exhibition-gallery, .exhibition-text, .exhibition-galleryDefault, .exhibition-gallerySpecial, .exhibition-diploma, .exhibition-galleryCool {
+  .exhibition-hero, .exhibition-gallery, .exhibition-text, .exhibition-galleryDefault, .exhibition-gallerySpecial, .exhibition-diploma, .exhibition-galleryCool, .exhibition-video {
     margin-bottom: 60px;
   }
   .exhibition-galleryDefault__item {
@@ -7491,7 +7490,7 @@ textarea {
 }
 
 @media (max-width: 900px) {
-  .exhibition-hero, .exhibition-gallery, .exhibition-text, .exhibition-galleryDefault, .exhibition-gallerySpecial, .exhibition-diploma, .exhibition-galleryCool {
+  .exhibition-hero, .exhibition-gallery, .exhibition-text, .exhibition-galleryDefault, .exhibition-gallerySpecial, .exhibition-diploma, .exhibition-galleryCool, .exhibition-video {
     margin-bottom: 50px;
   }
   .exhibition-gallerySpecial {
@@ -7508,7 +7507,7 @@ textarea {
 }
 
 @media (max-width: 600px) {
-  .exhibition-hero, .exhibition-gallery, .exhibition-text, .exhibition-galleryDefault, .exhibition-gallerySpecial, .exhibition-diploma, .exhibition-galleryCool {
+  .exhibition-hero, .exhibition-gallery, .exhibition-text, .exhibition-galleryDefault, .exhibition-gallerySpecial, .exhibition-diploma, .exhibition-galleryCool, .exhibition-video {
     margin-bottom: 40px;
   }
   .exhibition-galleryDefault {
@@ -7543,7 +7542,7 @@ textarea {
 }
 
 @media (max-width: 400px) {
-  .exhibition-hero, .exhibition-gallery, .exhibition-text, .exhibition-galleryDefault, .exhibition-gallerySpecial, .exhibition-diploma, .exhibition-galleryCool {
+  .exhibition-hero, .exhibition-gallery, .exhibition-text, .exhibition-galleryDefault, .exhibition-gallerySpecial, .exhibition-diploma, .exhibition-galleryCool, .exhibition-video {
     margin-bottom: 30px;
   }
 }
