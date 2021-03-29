@@ -251,7 +251,7 @@ $(document).ready(function() {
 
             let cardSlider = document.querySelector('.card-slider'),
                 cardSliderWidth = cardSlider.clientWidth,
-                cardSliderHeight = cardSliderWidth * 1.38;
+                cardSliderHeight = cardSliderWidth * 1.1;
 
                 if (cardSlider) {
                     cardSlider.style.height = cardSliderHeight + 'px';

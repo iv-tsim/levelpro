@@ -100,6 +100,8 @@
                     display: none
                     -webkit-appearance: none
                     margin: 0
+            &__minus
+                padding: 5px 0
         &__delete
             &-wrapper
                 cursor: pointer
@@ -156,6 +158,11 @@
             font-weight: 700
         &__number[data-number="0"]
             display: none
+    &-empty
+        div
+            margin-bottom: 10px
+        a
+            margin-top: 20px
 
 .cart.active
     right: 0
