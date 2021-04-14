@@ -7596,19 +7596,18 @@ textarea {
 }
 
 .lk-edit__form {
-  padding-bottom: 50px;
-  max-width: 700px;
+  margin-top: 30px;
 }
 
-.lk-edit .errortext {
+.lk-edit__form .errortext {
   color: red;
 }
 
-.lk-edit .notetext {
+.lk-edit__form .notetext {
   color: green;
 }
 
-.lk-edit .notetext, .lk-edit .errortext {
+.lk-edit__form .notetext, .lk-edit__form .errortext {
   display: block;
   margin-bottom: 15px;
 }
