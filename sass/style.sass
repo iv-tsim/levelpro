@@ -126,7 +126,7 @@ textarea
     &_small
         padding: 9px 15px
         font-size: 11px
-    &:hover
+    &:hover, &.active
         background-color: $brightRed
     &_wide
         padding: 16px 50px
@@ -347,6 +347,10 @@ textarea
 // Файлы, относящиеся к странице выставки
 
 @import ./exhibition/_exhibition.sass
+
+// Файлы, относящиеся к странице Личного кабинета
+
+@import ./lk/_lk.sass
 
 .alertify-notifier .ajs-message.ajs-error
     -webkit-box-shadow: 0 0 3px #333333

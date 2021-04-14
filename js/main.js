@@ -87,7 +87,7 @@ $(document).ready(function() {
                 nextEl: '.slider-arrow.slider-arrow__next.fashion-arrow'
             },
             pagination: {
-                el: '.slider-count',
+                el: '.slider-count.fashion-count',
                 type: 'custom',
                 renderCustom: function (swiper, current, total) {
                     return '<div class="slider-count__current">' + addZero(current) + '</div>' +
@@ -132,15 +132,15 @@ $(document).ready(function() {
                 prevEl: '.slider-arrow.slider-arrow__prev.inst-arrow',
                 nextEl: '.slider-arrow.slider-arrow__next.inst-arrow'
             },
-            pagination: {
-                el: '.slider-count',
-                type: 'custom',
-                renderCustom: function (swiper, current, total) {
-                    return '<div class="slider-count__current">' + addZero(current) + '</div>' +
-                            '<div class="slider-count__dec"></div>' +
-                            '<div class="slider-count__total">' + addZero(total) + '</div>';
-                }
-            },
+            // pagination: {
+            //     el: '.slider-count.inst-count"',
+            //     type: 'custom',
+            //     renderCustom: function (swiper, current, total) {
+            //         return '<div class="slider-count__current">' + addZero(current) + '</div>' +
+            //                 '<div class="slider-count__dec"></div>' +
+            //                 '<div class="slider-count__total">' + addZero(total) + '</div>';
+            //     }
+            // },
             breakpoints: {
                 950: {
                     spaceBetween: 40,
@@ -562,7 +562,7 @@ $(document).ready(function() {
 
             }
 
-            if (cart.classList.contains('active') && (target.closest('.cart-cross') || !target.closest('.cart'))) {
+            if (cart && cart.classList.contains('active') && (target.closest('.cart-cross') || !target.closest('.cart'))) {
 
                 cart.classList.remove('active');
                 continueBodyScrolling();

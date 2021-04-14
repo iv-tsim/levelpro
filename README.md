@@ -16,3 +16,6 @@
 - [home.html](https://iv-tsim.ru/levelpro/home.html) - Страница бренда levelprohome
 - [kids.html](https://iv-tsim.ru/levelpro/kids.html) - Страница бренда levelprokids
 - [exhibition.html](https://iv-tsim.ru/levelpro/exhibition.html) - Типовая страница выставки
+- [lk.html](https://iv-tsim.ru/levelpro/lk.html) - Личный кабинет
+- [lk_edit.html](https://iv-tsim.ru/levelpro/lk_edit.html) - Редактирование профиля
+- [lk_history.html](https://iv-tsim.ru/levelpro/lk_history.html) - История заказов
